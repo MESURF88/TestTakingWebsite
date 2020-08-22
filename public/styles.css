@@ -1,0 +1,59 @@
+.main_text {
+    color: white;
+    -webkit-text-stroke: 1px black; /* width and color */ 
+}
+
+.main_description {
+    color: black;
+    margin-left: 5%;
+}
+
+.center {
+    display: flex;
+    text-align: left;
+    margin-left: 30%;
+    align-items: center;
+    height: 50px;
+    width: 500px;
+    border: 3px solid green; 
+}
+
+.results_list {
+    margin-left: 50px;
+}
+
+.nav-link a {
+    color: white;
+}
+
+.heading_list li {
+    display: inline;
+}
+
+.animate_center {
+    padding-top: 10px;
+    display: flex;
+    text-align: left;
+    margin-left: 40%;
+    align-items: center;
+    height: 100px;
+    width: 400px;
+}
+
+#congrats {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:100px; top:0px;}
+    50%  {background-color:blue; left:100px; top:100px;}
+    75%  {background-color:green; left:0px; top:100px;}
+    100% {background-color:red; left:0px; top:0px;}
+}

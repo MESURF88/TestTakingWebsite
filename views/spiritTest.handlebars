@@ -1,0 +1,80 @@
+<head>
+<h1 style="text-align: center"><b>spirit animal</b></h1>
+	<style>
+		body{
+			font-family: 'Roboto', sans-serif;
+			background: #808080;
+			background: -webkit-linear-gradient(to bottom, #CBCBCB,#a90202,#2c2b2b);
+			background: linear-gradient(to bottom, #CBCBCB,#a90202,#2c2b2b);
+			min-height: 100vh;
+			width: 100vw;
+			margin: 0;
+		}
+		fieldset{
+			text-align:left;
+			width: 750px;
+			position:relative;
+			left:25%;
+		}
+	</style>
+</head>
+<body>
+<form id="test_spiritTest" action="/spiritTest/{{id}}" method="post">
+	<fieldset>
+		<legend>Q1</legend>
+		<p>
+			<label>Do you find yourself howling at the moon?</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_0"
+				value = "0" />
+			<label for = "Q0_0">Yes, more often than I care to admit.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_1"
+				value = "1" />
+			<label for = "Q0_1">I do sometimes but suppress the urge.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_2"
+				value = "2" />
+			<label for = "Q0_2">I'm a cat person.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_3"
+				value = "3" />
+			<label for = "Q0_3">I don't go out at night and avoid darkness, so I don't see the moon much.</label></br>
+		</p>
+	</fieldset>	<fieldset>
+		<legend>Q2</legend>
+		<p>
+			<label>Where would you rather spend your free time?</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_0"
+				value = "0" />
+			<label for = "Q1_0">I document all my tasks.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_1"
+				value = "1" />
+			<label for = "Q1_1">I wake each day with an idea of what I want to do.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_2"
+				value = "2" />
+			<label for = "Q1_2">I am thorough about writing down my long-term goals.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_3"
+				value = "3" />
+			<label for = "Q1_3">I make an effort go to with the flow.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<input type="submit" value="Submit" class="btn btn-primary"/>
+	</fieldset>
+	<fieldset hidden>
+		<input type="hidden" name="keys_string" id="keys" value="00176767">
+	</fieldset>
+</form>
