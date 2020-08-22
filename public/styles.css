@@ -8,13 +8,17 @@
     margin-left: 5%;
 }
 
+label {
+    display: inline;
+}
+
 .center {
     display: flex;
     text-align: left;
-    margin-left: 30%;
+    margin: auto;
     align-items: center;
     height: 50px;
-    width: 500px;
+    width: 365px;
     border: 3px solid green; 
 }
 
