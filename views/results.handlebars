@@ -14,19 +14,43 @@
 </head>
 <h1>Results Page</h1>
 <h2>Welcome to the results page </h2>
-<h4>The fields below show your scores of your test!</h4>
+<h4>The fields below show your scores of your tests!</h4>
 </br>
 <div class="center">
-    <!-- TODO: make table -->
-    <li class="results_list">mbti result: {{mbtiResult}}</li>
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><li class="results_list">mbti result: {{mbtiResult.result}}</li></td>
+                {{#if mbtiResult.result}}
+                    <td><button id="mbtiButton" style="float:right;" onclick="mbtiInfo()" class="btn btn-info">more info</button></td>
+                {{/if}}
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center_info">
+        <div id="mbtiDesc" style="display:none">{{lookup_prop mbtiResult.result mbtiResult.result_info}}</div>
 </div>
 <div class="center">
-    <li class="results_list">spirit animal result: {{spiritResult}}</li>
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><li class="results_list">spirit animal result: {{spiritResult.result}}</li></td>
+                {{#if spiritResult.result}}
+                    <td><button style="float:right;" onclick="spiritInfo()" class="btn btn-info">more info</button></td>
+                {{/if}}
+            </tr> 
+        </tbody>
+    </table>   
 </div>
+<div class="center_info">
+     <div id="spiritDesc" style="display:none">{{lookup_prop spiritResult.result spiritResult.result_info}}</div>
+</div>
+
 </br>
 {{#if animate}}
     <div class="center">
-        <p style="padding-left:5px">  Congratulations completed all test!</p>
+        <p style="padding-left:5px">  Congratulations, completed all tests!</p>
         
     </div>
     <div class="animate_center">
