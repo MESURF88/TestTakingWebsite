@@ -47,6 +47,7 @@ function calculate_custom(body){
                 }
             }
         }
+        console.log(chosen_char_arr);//TODO: remove
         //Determine dnd character based on additive scoring, if tie,
         //ipip, jt results are given more weight (x3)
         //eops results are given (x2)
@@ -214,8 +215,7 @@ router.post('/results/:id', (req, res) => {
         calculate_custom(req.body).then(function(key) {
         req.session.dnd_char = key['dnd_char'];
         req.session.display_check = '1';
-        //res.redirect('/results');
-        res.end();
+        res.redirect('/results');
     }, function(error) {
         console.error("Failed!", error);
         res.status(404).end();
