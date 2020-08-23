@@ -69,6 +69,7 @@ function initialize_context(){
 
 //Results page
 router.get('/results', (req, res) => {
+  const NUM_TESTS = 8;
   var context = {};
   initialize_context().then(function(descriptions) {
         //intialize context
@@ -120,7 +121,7 @@ router.get('/results', (req, res) => {
           else{
             all_results[idx] = context[result_string].result;
           }
-          if (idx < 7){
+          if (idx < (NUM_TESTS - 1)){
             idx++;
           }
         }
