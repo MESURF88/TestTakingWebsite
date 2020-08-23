@@ -42,11 +42,11 @@ function calculate_mbti(body){
         var F_val = arr[5]/TF_total;
         var J_val = arr[6]/JP_total; 
         var P_val = arr[7]/JP_total;
-        if (I_val > E_val){
-            result_mbti += 'I';
+        if (E_val > I_val){
+            result_mbti += 'E';
         }
         else{
-            result_mbti += 'E';
+            result_mbti += 'I';
         }
         if (N_val > S_val){
             result_mbti += 'N';
@@ -54,11 +54,11 @@ function calculate_mbti(body){
         else{
             result_mbti += 'S';
         }
-        if (F_val > T_val){
-            result_mbti += 'F';
+        if (T_val > F_val){
+            result_mbti += 'T';
         }
         else{
-            result_mbti += 'T';
+            result_mbti += 'F';
         }
         if (P_val > J_val){
             result_mbti += 'P';

@@ -91,7 +91,7 @@ router.get('/results', (req, res) => {
         }
         if (all_defined == 1){
           context.animate = '1';
-          //calculate a fantasy character based on results of eight test.
+          //calculate a fantasy character based on results of eight test. and link to dnd website from character result.
         }
       
         res.render('results.handlebars', context);

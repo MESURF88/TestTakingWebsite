@@ -2,7 +2,22 @@
     "mbtiResult": {
         "result": "",
         "result_info": {
-            "ISTJ": "Hardworking, and reliable."
+            "ISFJ": "Hardworking, and reliable.",
+            "ESFJ": "Hardworking, and reliable.",
+            "ISTJ": "Hardworking, and reliable.",
+            "ISFP": "Hardworking, and reliable.",
+            "ESTJ": "Hardworking, and reliable.",
+            "ESFP": "Hardworking, and reliable.",
+            "ENFP": "Hardworking, and reliable.",
+            "ISTP": "Hardworking, and reliable.",
+            "INFP": "Hardworking, and reliable.",
+            "ESTP": "Hardworking, and reliable.",
+            "INTP": "Hardworking, and reliable.",
+            "ENTP": "Hardworking, and reliable.",
+            "ENFJ": "Hardworking, and reliable.",
+            "INTJ": "Hardworking, and reliable.",
+            "ENTJ": "Hardworking, and reliable.",
+            "INFJ": "Hardworking, and reliable."
         }
     },
     "spiritResult": {
