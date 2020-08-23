@@ -29,7 +29,7 @@ function calculate_spirit_animal(body){
         }
 
         //Determine spirit based on additive scoring
-        var result_spirit = 'wolf';
+        var result_spirit = 'Wolf';
         
         resolve(result_spirit);
     });
