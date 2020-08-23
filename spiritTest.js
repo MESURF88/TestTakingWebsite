@@ -40,6 +40,7 @@ function calculate_spirit_animal(body){
         //Generate random processing id for current user's test submission
         var context = {};
         var rand = Math.floor(Math.random() * 100);
+        rand *= (Math.floor(Math.random() * 5) + 1);
         context.id = rand;
         res.render('spiritTest.handlebars', context);
     });
@@ -48,6 +49,7 @@ function calculate_spirit_animal(body){
     router.post('/:id', (req, res) => {
             calculate_spirit_animal(req.body).then(function(result_spirit) {
             req.session.result_spirit = result_spirit;
+            req.session.display_check = '0';
             res.redirect('/results');
         }, function(error) {
             console.error("Failed!", error);

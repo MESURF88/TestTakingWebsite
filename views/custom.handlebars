@@ -1,0 +1,185 @@
+<head>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f64f59;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #dfdca7d7, #dabb2fac, #e0f90087);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #dfdca7d7, #dabb2fac, #e0f90087); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            min-height: 100vh;
+            width: 100vw;
+            margin: 0;
+        }
+    </style>
+</head>
+<h1>Custom Page</h1>
+<h2>Customize the Results of each test if the answer is already known.</h2>
+<h4>The default of each test is set to blank unless an option is selected.</h4>
+</br>
+<form id="custom_form" action="/custom/{{id}}" method="post">
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><li class="results_list">ipip: </li></td>
+                <td><div class="form-group mb-2">
+                    <select id="ipipSelect"  name="0" class="form-control form-control-sm">
+                        <option value=""></option>
+                        {{#each ipipResult.result_info}}
+                            <option value="{{@key}}">{{@key}}</option>
+                        {{/each}}
+                    </select>
+                </div></td>
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><li class="results_list">jt: </li></td>
+                <td><div class="form-group mb-2">
+                    <select id="jtSelect" name="1" class="form-control form-control-sm">
+                        <option value=""></option>
+                        {{#each jtResult.result_info}}
+                            <option value="{{@key}}">{{@key}}</option>
+                        {{/each}}
+                    </select>
+                </div></td>
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><li class="results_list">disc: </li></td>
+                <td><div class="form-group mb-2">
+                    <select id="discSelect"  name="2" class="form-control form-control-sm">
+                        <option value=""></option>
+                        {{#each discResult.result_info}}
+                            <option value="{{@key}}">{{@key}}</option>
+                        {{/each}}
+                    </select>
+                </div></td>
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><li class="results_list">fpq: </li></td>
+                <td><div class="form-group mb-2">
+                    <select id="fpqSelect"  name="3" class="form-control form-control-sm">
+                        <option value=""></option>
+                        {{#each fpqResult.result_info}}
+                            <option value="{{@key}}">{{@key}}</option>
+                        {{/each}}
+                    </select>
+                </div></td>
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><li class="results_list">eq: </li></td>
+                <td><div class="form-group mb-2">
+                    <select id="eqSelect" name="4" class="form-control form-control-sm">
+                        <option value=""></option>
+                        {{#each eqResult.result_info}}
+                            <option value="{{@key}}">{{@key}}</option>
+                        {{/each}}
+                    </select>
+                </div></td>
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><li class="results_list">eops: </li></td>
+                <td><div class="form-group mb-2">
+                    <select id="eopsSelect" name="5" class="form-control form-control-sm">
+                        <option value=""></option>
+                        {{#each eopsResult.result_info}}
+                            <option value="{{@key}}">{{@key}}</option>
+                        {{/each}}
+                    </select>
+                </div></td>
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><li class="results_list">chrono: </li></td>
+                <td><div class="form-group mb-2">
+                    <select id="chronoSelect" name="6" class="form-control form-control-sm">
+                        <option value=""></option>
+                        {{#each chronoResult.result_info}}
+                            <option value="{{@key}}">{{@key}}</option>
+                        {{/each}}
+                    </select>
+                </div></td>
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><li class="results_list">spirit animal: </li></td>
+                <td><div class="form-group mb-2">
+                    <select id="spiritSelect" name="7" class="form-control form-control-sm">
+                        <option value=""></option>
+                        {{#each spiritResult.result_info}}
+                            <option value="{{@key}}">{{@key}}</option>
+                        {{/each}}
+                    </select>
+                </div></td>
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center_buttons">
+    <p style="display:inline; padding:10px;">See Results page:* </p>
+    <input type="submit" value="Check Results" class="btn btn-success" style="display:inline; float:right; padding-top:10px;"/>
+</div>
+</form>
+<div class="center_buttons">
+    <p style="display:inline; padding:10px;">Reset all the custom result fields.</p>
+    <button id="resetButton" onclick="resetCustom()" class="btn btn-secondary" style="display:inline float:right; padding-top:11px;"/>Reset </button>   
+</div>
+<footer style="text-align:center">*All of the custom results will persist after Checking Results.</footer>
+<p id="sessions_manip" style="display:none">{{session_arr}}</p>
+<script type="text/javascript">
+$(document).ready(function(){
+    //on load populate selects (I wish I knew a better way to do this with node and express, too bad.)
+    $(function() {
+        var str = $('#sessions_manip').text().split(",");
+        $('#ipipSelect').val(str[0]);
+        $('#jtSelect').val(str[1]);
+        $('#discSelect').val(str[2]);
+        $('#fpqSelect').val(str[3]);
+        $('#eqSelect').val(str[4]);
+        $('#eopsSelect').val(str[5]);
+        $('#chronoSelect').val(str[6]);
+        $('#spiritSelect').val(str[7]);
+    });
+});
+</script>
+
+
+

@@ -1,5 +1,25 @@
 {
-    "mbtiResult": {
+    "ipipResult" : {
+        "result": "",
+        "result_info": {
+            "High-C": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-E": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-A": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-I": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-S": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-CE": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-AC": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-CI": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-CS": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-EA": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-IE": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-ES": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-AI": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-AS": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong.",
+            "High-IS": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning. High conscientiousness can be seen as stubborn or headstrong."
+        }
+    },
+    "jtResult": {
         "result": "",
         "result_info": {
             "ISFJ": "Hardworking, and reliable.",
@@ -20,10 +40,69 @@
             "INFJ": "Hardworking, and reliable."
         }
     },
+    "discResult" :  {
+        "result": "",
+        "result_info": {
+            "D": "Dominance is defined as a person who is competitve, results-oriented, very decisive and adept at solving problems.",
+            "I": "Influence is defined as person who is persuasive, charismatic, ethusiastic and has good interpersonal skills.",
+            "S": "Steadiness is defined as person who is patient, sincere, stable, dutiful and a good team player.",
+            "C": "Conscientiousness is defined as a person who is objective, analytical, precise and is very pragmatic."
+        }
+    },
+    "fpqResult" :  {
+        "result": "",
+        "result_info": {
+            "Explorer": "A high EQ means high receptibility to emotional information, this serves to guide thinking and behavior. High EQ is thought to be the enhanced ability to recognize the emotions in others and leadership skills. A shortcoming is that high EQ correlates to lower creativity and risk-taking.",
+            "Builder": "An average EQ means not much more than being adept at picking up emotions and reading a room but not to the level of someone with high EQ. Overall, a normal capacity to handle emotional information.",
+            "Director": "a low EQ means low receptibility to emotional information. This could manifest as behaving with less regard for other's emotions and more impulsively. Low EQ is linked to lower empathy and can mean higher aggression and risk-taking.",
+            "Negotiator": "a low EQ means low receptibility to emotional information. This could manifest as behaving with less regard for other's emotions and more impulsively. Low EQ is linked to lower empathy and can mean higher aggression and risk-taking."
+        }
+    },
+    "eqResult" :  {
+        "result": "",
+        "result_info": {
+            "High-eq": "A high EQ means high receptibility to emotional information, this serves to guide thinking and behavior. High EQ is thought to be the enhanced ability to recognize the emotions in others and leadership skills. A shortcoming is that high EQ correlates to lower creativity and risk-taking.",
+            "Mid-eq": "An average EQ means not much more than being adept at picking up emotions and reading a room but not to the level of someone with high EQ. Overall, a normal capacity to handle emotional information.",
+            "Low-eq": "a low EQ means low receptibility to emotional information. This could manifest as behaving with less regard for other's emotions and more impulsiveness. Low EQ is linked to lower empathy, which can mean a higher priority of personal ambitions."
+        }
+    },
+    "eopsResult" :  {
+        "result": "",
+        "result_info": {
+            "Reformer": "Type that is rational, steadfast, perfectionistic and dutiful.",
+            "Helper": "Type that is rational, steadfast, perfectionistic and dutiful.",
+            "Achiever": "Type that is rational, steadfast, perfectionistic and dutiful.",
+            "Individualist": "Type that is rational, steadfast, perfectionistic and dutiful.",
+            "Investigator": "Type that is rational, steadfast, perfectionistic and dutiful.",
+            "Loyalist": "Type that is rational, steadfast, perfectionistic and dutiful.",
+            "Enthusiast": "Type that is rational, steadfast, perfectionistic and dutiful.",
+            "Challenger": "Type that is rational, steadfast, perfectionistic and dutiful.",
+            "Peacemaker": "Type that is agreeable, reassuring, complacent and accomodating."
+        }
+    },
+    "chronoResult" :  {
+        "result": "",
+        "result_info": {
+            "Morning-type": "Type that favors morning and functions best at this time.",
+            "Day-type": "Type that favors neither morning or evening and functions during the day.",
+            "Evening-type": "Type that favors evening and functions best at this time."
+        }
+    },
     "spiritResult": {
         "result": "",
         "result_info": {
-            "wolf": ""
+            "Bear": "A symbol of power, ruggedness and deep connection to the environment",
+            "Dove": "A symbol of power, ruggedness and deep connection to the environment",
+            "Elephant": "A symbol of power, ruggedness and deep connection to the environment",
+            "Fox": "A symbol of power, ruggedness and deep connection to the environment",
+            "Hawk": "A symbol of power, ruggedness and deep connection to the environment",
+            "Owl": "A symbol of power, ruggedness and deep connection to the environment",
+            "Peacock": "A symbol of power, ruggedness and deep connection to the environment",
+            "Turtle": "A symbol of power, ruggedness and deep connection to the environment",
+            "Wolf": "A symbol of primal instincts, cunning and connection to the pack",
+            "Dolphin": "A symbol of power, ruggedness and deep connection to the environment",
+            "Tiger": "A symbol of power, ruggedness and deep connection to the environment",
+            "Deer": "A symbol of power, ruggedness and deep connection to the environment"
         }
     }
 }

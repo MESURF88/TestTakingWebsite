@@ -40,6 +40,12 @@ label {
     border: 3px solid green; 
 }
 
+.center_buttons {
+    margin: auto;
+    height: 45px;
+    width: 350px;
+    border: 2px solid green; 
+}
 
 .results_list {
     margin-left: 50px;

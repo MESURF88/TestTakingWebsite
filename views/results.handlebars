@@ -2,7 +2,7 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background: #f64f59;  /* fallback for old browsers */
+            background: #b0e72fad;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to bottom, #007f60, #449900, #40f900);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to bottom, #007f60, #449900, #40f900); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -20,16 +20,31 @@
     <table class="table-condensed" style="width:345px;">
         <tbody> 
             <tr> 
-                <td><li class="results_list">mbti result: {{mbtiResult.result}}</li></td>
-                {{#if mbtiResult.result}}
-                    <td><button id="mbtiButton" style="float:right;" onclick="mbtiInfo()" class="btn btn-info">more info</button></td>
+                <td><li class="results_list">ipipresult: {{ipipResult.result}}</li></td>
+                {{#if ipipResult.result}}
+                    <td><button id="ipipButton" style="float:right;" onclick="ipipInfo()" class="btn btn-info">more info</button></td>
                 {{/if}}
             </tr> 
         </tbody>
     </table>   
 </div>
 <div class="center_info">
-        <div id="mbtiDesc" style="display:none">{{lookup_prop mbtiResult.result mbtiResult.result_info}}</div>
+        <div id="ipipDesc" style="display:none">{{lookup_prop ipipResult.result ipipResult.result_info}}</div>
+</div>
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><li class="results_list">jt result: {{jtResult.result}}</li></td>
+                {{#if jtResult.result}}
+                    <td><button id="jtButton" style="float:right;" onclick="jtInfo()" class="btn btn-info">more info</button></td>
+                {{/if}}
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center_info">
+        <div id="jtDesc" style="display:none">{{lookup_prop jtResult.result jtResult.result_info}}</div>
 </div>
 <div class="center">
     <table class="table-condensed" style="width:345px;">
@@ -37,7 +52,7 @@
             <tr> 
                 <td><li class="results_list">spirit animal result: {{spiritResult.result}}</li></td>
                 {{#if spiritResult.result}}
-                    <td><button style="float:right;" onclick="spiritInfo()" class="btn btn-info">more info</button></td>
+                    <td><button id="spiritButton" style="float:right;" onclick="spiritInfo()" class="btn btn-info">more info</button></td>
                 {{/if}}
             </tr> 
         </tbody>
@@ -48,7 +63,7 @@
 </div>
 
 </br>
-{{#if animate}}
+{{#if (eq dndCharDisplay '1')}}
     <div class="center">
         <p style="padding-left:5px">Congratulations, completed all tests!</p>     
     </div>
@@ -57,11 +72,13 @@
     </div>
     <div class="center">
         <p style="padding-left:5px">drumroll... </p> 
-        <p style="padding-left:50px"><b>The</b> </p>
+        <p style="padding-left:50px"><b>The </b><b>{{dndChar}}</b></p>
     </div>
-    <div class="animate_center">
-        <div id="congrats">Congrats!!</div>
-    </div>
+    {{#if (eq animate '1')}}
+        <div class="animate_center">
+            <div id="congrats">Congrats!!</div>
+        </div>
+    {{/if}}
 {{/if}}
 
 

@@ -74,56 +74,112 @@ router.get('/results', (req, res) => {
         //intialize context
         context = descriptions;
 
-        if(req.session.result_mbti != undefined){
-          context.mbtiResult.result = req.session.result_mbti.toString();
+        if(req.session.result_ipip != undefined){
+          context.ipipResult.result = req.session.result_ipip.toString();
         }
-        
+        if(req.session.result_jt != undefined){
+          context.jtResult.result = req.session.result_jt.toString();
+        }
+        if(req.session.result_disc != undefined){
+          context.discResult.result = req.session.result_disc.toString();
+        }
+        if(req.session.result_fpq != undefined){
+          context.fpqResult.result = req.session.result_fpq.toString();
+        }
+        if(req.session.result_eq != undefined){
+          context.eqResult.result = req.session.result_eq.toString();
+        }
+        if(req.session.result_eops != undefined){
+          context.eopsResult.result = req.session.result_eops.toString();
+        }   
+        if(req.session.result_chrono != undefined){
+          context.chronoResult.result = req.session.result_chrono.toString();
+        }
         if(req.session.result_spirit != undefined){
           context.spiritResult.result = req.session.result_spirit.toString();
         }
+        if(req.session.dnd_char != undefined){
+          context.dndChar = req.session.dnd_char.toString();        
+        }
       
+        if (req.session.display_check === '1'){
+          context.dndCharDisplay = '1';
+        }
+        else{
+          context.dndCharDisplay = '0';
+        }
         //check if all tests completed
         var all_defined = 1;
+        var all_results = {};
+        var idx = 0;
         for (result_string in context){
           if(context[result_string].result == ""){
             all_defined = 0;
+            all_results[idx] = "";
+          }
+          else{
+            all_results[idx] = context[result_string].result;
+          }
+          if (idx < 7){
+            idx++;
           }
         }
+
         if (all_defined == 1){
           context.animate = '1';
-          //calculate a fantasy character based on results of eight test. and link to dnd website from character result.
+          context.dndCharDisplay = '1';
+          //Generate random processing id for current user's dnd character recalculation
+          var rand = Math.floor(Math.random() * 100);
+          rand *= (Math.floor(Math.random() * 5) + 1);
+          const proto = req.protocol + '://' + req.get('host'); 
+          var options = { method: 'POST',
+            url: `${proto}/custom/results/${rand}`,
+            headers: { 'content-type': 'application/json' },
+            body: all_results,
+            json: true };
+          request(options, (error, response, body) => {
+              if (error){
+                  res.status(500).send(error);
+              } else {
+                res.render('results.handlebars', context);
+              }
+          });
+        }
+        else{
+          context.animate = '0';
+          res.render('results.handlebars', context);
         }
       
-        res.render('results.handlebars', context);
+
 
   }, function(error) {
       console.error("Failed!", error);
       //intialize placeholder context if failed read
       var context = {
-        "mbtiResult" : {
+          "ipipResult" : {
+              "result": ""
+        },
+          "jtResult" :  {
             "result": ""
         },
-        "discResult" :  {
-          "result": ""
-      },
-        "personaResult" :  {
-          "result": ""
-      },
-        "eqResult" :  {
-          "result": ""
-      },
-        "enneagramResult" :  {
-          "result": ""
-      },
-        "oceanResult" :  {
-          "result": ""
-      },
-        "sortinghatResult" :  {
-          "result": ""
-      },
-        "spiritResult":  {
-          "result": ""
-      }
+          "discResult" :  {
+            "result": ""
+        },
+          "fpqResult" :  {
+            "result": ""
+        },
+          "eqResult" :  {
+            "result": ""
+        },
+          "eopsResult" :  {
+            "result": ""
+        },
+          "chronoResult" :  {
+            "result": ""
+        },
+          "spiritResult":  {
+            "result": ""
+        }
       }
       res.render('results.handlebars', context);
   });
@@ -139,9 +195,10 @@ router.get('/', (req, res) => {
 /* ------------- End Controller Functions ------------- */
 
 app.use('/', router);
-app.use('/mbtiTest', require('./mbtiTest.js'));
+app.use('/jtTest', require('./jtTest.js'));
 
 app.use('/spiritTest', require('./spiritTest.js'));
+app.use('/custom', require('./custom.js'));
 
 // Listen to the App Engine-specified port, or 8080 otherwise
 const PORT = process.env.PORT || 8080;

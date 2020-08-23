@@ -2,8 +2,8 @@ module.exports = function(){
     var express = require('express');
     var router = express.Router();
 
-//MBTI calculation
-function calculate_mbti(body){
+//jt calculation
+function calculate_jt(body){
     return new Promise(function(resolve,reject) {
         var key = body.keys_string;
         var key_length = key.length; 
@@ -28,8 +28,8 @@ function calculate_mbti(body){
             }
         }
 
-        //Determine mbti based on additive scoring, preference given to more common
-        var result_mbti = '';
+        //Determine jt based on additive scoring, preference given to more common
+        var result_jt = '';
         var IE_total = arr[0] + arr[1];
         var SN_total = arr[2] + arr[3];
         var TF_total = arr[4] + arr[5];
@@ -43,46 +43,48 @@ function calculate_mbti(body){
         var J_val = arr[6]/JP_total; 
         var P_val = arr[7]/JP_total;
         if (E_val > I_val){
-            result_mbti += 'E';
+            result_jt += 'E';
         }
         else{
-            result_mbti += 'I';
+            result_jt += 'I';
         }
         if (N_val > S_val){
-            result_mbti += 'N';
+            result_jt += 'N';
         }
         else{
-            result_mbti += 'S';
+            result_jt += 'S';
         }
         if (T_val > F_val){
-            result_mbti += 'T';
+            result_jt += 'T';
         }
         else{
-            result_mbti += 'F';
+            result_jt += 'F';
         }
         if (P_val > J_val){
-            result_mbti += 'P';
+            result_jt += 'P';
         }
         else{
-            result_mbti += 'J';
+            result_jt += 'J';
         }
-        resolve(result_mbti);
+        resolve(result_jt);
     });
 }
 
-    //MBTI test page
+    //jt test page
     router.get('/', (req, res) => {
         //Generate random processing id for current user's test submission
         var context = {};
         var rand = Math.floor(Math.random() * 100);
+        rand *= (Math.floor(Math.random() * 5) + 1);
         context.id = rand;
-        res.render('mbtiTest.handlebars', context);
+        res.render('jtTest.handlebars', context);
     });
     
-    //MBTI results
+    //jt results
     router.post('/:id', (req, res) => {
-            calculate_mbti(req.body).then(function(result_mbti) {
-            req.session.result_mbti = result_mbti;
+            calculate_jt(req.body).then(function(result_jt) {
+            req.session.result_jt = result_jt;
+            req.session.display_check = '0';
             res.redirect('/results');
         }, function(error) {
             console.error("Failed!", error);

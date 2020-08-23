@@ -8,7 +8,6 @@ $(document).ready(function(){
         //After redirect highlight results tab and hide descriptions intially
         if ("/results" == location.pathname){
             $("#resultsTab").trigger("click");
-
         }
     });
  });
