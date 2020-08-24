@@ -52,10 +52,10 @@
     "fpqResult" :  {
         "result": "",
         "result_info": {
-            "Explorer": "A high EQ means high receptibility to emotional information, this serves to guide thinking and behavior. High EQ is thought to be the enhanced ability to recognize the emotions in others and leadership skills. A shortcoming is that high EQ correlates to lower creativity and risk-taking.",
-            "Builder": "An average EQ means not much more than being adept at picking up emotions and reading a room but not to the level of someone with high EQ. Overall, a normal capacity to handle emotional information.",
-            "Director": "a low EQ means low receptibility to emotional information. This could manifest as behaving with less regard for other's emotions and more impulsively. Low EQ is linked to lower empathy and can mean higher aggression and risk-taking.",
-            "Negotiator": "a low EQ means low receptibility to emotional information. This could manifest as behaving with less regard for other's emotions and more impulsively. Low EQ is linked to lower empathy and can mean higher aggression and risk-taking."
+            "Explorer": "Explorers are Curious/Energetic.",
+            "Builder": "Builders are Cautious/Social Norm Compliant.",
+            "Director": "Directors are Analytical/Tough-minded.",
+            "Negotiator": "Negotiators are Prosocial/Empathetic."
         }
     },
     "eqResult" :  {
@@ -91,18 +91,18 @@
     "spiritResult": {
         "result": "",
         "result_info": {
-            "Bear": "A symbol of power, ruggedness and deep connection to the environment",
-            "Dove": "A symbol of power, ruggedness and deep connection to the environment",
-            "Elephant": "A symbol of power, ruggedness and deep connection to the environment",
-            "Fox": "A symbol of power, ruggedness and deep connection to the environment",
-            "Hawk": "A symbol of power, ruggedness and deep connection to the environment",
-            "Owl": "A symbol of power, ruggedness and deep connection to the environment",
-            "Peacock": "A symbol of power, ruggedness and deep connection to the environment",
-            "Turtle": "A symbol of power, ruggedness and deep connection to the environment",
+            "Bear": "A symbol of power, ruggedness and deep connection to the environment.",
+            "Dove": "A symbol of power, ruggedness and deep connection to the environment.",
+            "Elephant": "A symbol of power, ruggedness and deep connection to the environment.",
+            "Fox": "A symbol of power, ruggedness and deep connection to the environment.",
+            "Hawk": "A symbol of power, ruggedness and deep connection to the environment.",
+            "Owl": "A symbol of power, ruggedness and deep connection to the environment.",
+            "Peacock": "A symbol of power, ruggedness and deep connection to the environment.",
+            "Turtle": "A symbol of power, ruggedness and deep connection to the environment.",
             "Wolf": "A symbol of primal instincts, cunning and connection to the pack",
-            "Dolphin": "A symbol of power, ruggedness and deep connection to the environment",
-            "Tiger": "A symbol of power, ruggedness and deep connection to the environment",
-            "Deer": "A symbol of power, ruggedness and deep connection to the environment"
+            "Dolphin": "A symbol of power, ruggedness and deep connection to the environment.",
+            "Tiger": "A symbol of power, ruggedness and deep connection to the environment.",
+            "Deer": "A symbol of power, ruggedness and deep connection to the environment."
         }
     }
 }

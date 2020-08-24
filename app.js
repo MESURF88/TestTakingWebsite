@@ -7,6 +7,7 @@ const request = require('request');
 const path = require(`path`);
 const crypto = require('crypto');
 const fs = require('fs');
+const base64img = require('base64-img');
 const { totalmem } = require('os');
 const { resolve } = require('path');
 
@@ -100,7 +101,9 @@ router.get('/results', (req, res) => {
           context.spiritResult.result = req.session.result_spirit.toString();
         }
         if(req.session.dnd_char != undefined){
-          context.dndChar = req.session.dnd_char.toString();        
+          context.dndChar = req.session.dnd_char.toString();
+          var url_static = './public/img/' + req.session.dnd_char.toString() +  '.jpg';     
+          context.imgURL = base64img.base64Sync(url_static); 
         }
       
         if (req.session.display_check === '1'){

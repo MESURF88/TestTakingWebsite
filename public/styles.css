@@ -35,8 +35,8 @@ label {
     text-align: left;
     margin: auto;
     align-items: center;
-    width: 165px;
-    border: 3px solid green; 
+    width: 170px;
+    border: 5px solid green; 
 }
 
 .center_info {
@@ -56,8 +56,12 @@ label {
     border: 2px solid green; 
 }
 
+.custom_list {
+    margin-left: 15px;
+}
+
 .results_list {
-    margin-left: 50px;
+    margin-left: 5%;
 }
 
 .nav-link a {
@@ -88,14 +92,14 @@ label {
     background-color: red;
     position: relative;
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 @keyframes example {
     0%   {background-color:red; left:0px; top:0px;}
     25%  {background-color:yellow; left:100px; top:0px;}
-    50%  {background-color:blue; left:100px; top:100px;}
-    75%  {background-color:green; left:0px; top:100px;}
+    50%  {background-color:blue; left:100px; top:0px;}
+    75%  {background-color:green; left:0px; top:0px;}
     100% {background-color:red; left:0px; top:0px;}
 }

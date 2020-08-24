@@ -28,15 +28,18 @@
         <p style="padding-left:50px"><b>The </b><b>{{dndChar}}</b></p>
     </div>
     <div class="center_portrait">
-        <img class="image_portrait" src="/static/img/barbarian1.jpg" alt="Barbarian">
+        <a  target="_blank" href="https://www.dndbeyond.com/classes/{{dndChar}}">
+        <img class="image_portrait" src="{{imgURL}}" alt="Portrait" title="dnd class details website"/>
+        </a>
     </div>
     </br>
 {{/if}}
+
 <div class="center">
     <table class="table-condensed" style="width:345px;">
         <tbody> 
             <tr> 
-                <td><li class="results_list">ipipresult: {{ipipResult.result}}</li></td>
+                <td><p class="results_list">IPIP result: {{ipipResult.result}}</p></td>
                 {{#if ipipResult.result}}
                     <td><button id="ipipButton" style="float:right;" onclick="ipipInfo()" class="btn btn-info">more info</button></td>
                 {{/if}}
@@ -51,7 +54,7 @@
     <table class="table-condensed" style="width:345px;">
         <tbody> 
             <tr> 
-                <td><li class="results_list">jt result: {{jtResult.result}}</li></td>
+                <td><p class="results_list">JT result: {{jtResult.result}}</p></td>
                 {{#if jtResult.result}}
                     <td><button id="jtButton" style="float:right;" onclick="jtInfo()" class="btn btn-info">more info</button></td>
                 {{/if}}
@@ -66,7 +69,82 @@
     <table class="table-condensed" style="width:345px;">
         <tbody> 
             <tr> 
-                <td><li class="results_list">spirit animal result: {{spiritResult.result}}</li></td>
+                <td><p class="results_list">DISC result: {{discResult.result}}</p></td>
+                {{#if discResult.result}}
+                    <td><button id="discButton" style="float:right;" onclick="discInfo()" class="btn btn-info">more info</button></td>
+                {{/if}}
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center_info">
+        <div id="discDesc" style="display:none">{{lookup_prop discResult.result discResult.result_info}}</div>
+</div>
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><p class="results_list">FPQ result: {{fpqResult.result}}</p></td>
+                {{#if fpqResult.result}}
+                    <td><button id="fpqButton" style="float:right;" onclick="fpqInfo()" class="btn btn-info">more info</button></td>
+                {{/if}}
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center_info">
+        <div id="fpqDesc" style="display:none">{{lookup_prop fpqResult.result fpqResult.result_info}}</div>
+</div>
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><p class="results_list">EQ result: {{eqResult.result}}</p></td>
+                {{#if eqResult.result}}
+                    <td><button id="eqButton" style="float:right;" onclick="eqInfo()" class="btn btn-info">more info</button></td>
+                {{/if}}
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center_info">
+        <div id="eqDesc" style="display:none">{{lookup_prop eqResult.result eqResult.result_info}}</div>
+</div>
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><p class="results_list">EoPS result: {{eopsResult.result}}</p></td>
+                {{#if eopsResult.result}}
+                    <td><button id="eopsButton" style="float:right;" onclick="eopsInfo()" class="btn btn-info">more info</button></td>
+                {{/if}}
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center_info">
+        <div id="eopsDesc" style="display:none">{{lookup_prop eopsResult.result eopsResult.result_info}}</div>
+</div>
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><p class="results_list">Chronotype result: {{chronoResult.result}}</p></td>
+                {{#if chronoResult.result}}
+                    <td><button id="chronoButton" style="float:right;" onclick="chronoInfo()" class="btn btn-info">more info</button></td>
+                {{/if}}
+            </tr> 
+        </tbody>
+    </table>   
+</div>
+<div class="center_info">
+        <div id="chronoDesc" style="display:none">{{lookup_prop chronoResult.result chronoResult.result_info}}</div>
+</div>
+<div class="center">
+    <table class="table-condensed" style="width:345px;">
+        <tbody> 
+            <tr> 
+                <td><p class="results_list">Spirit Animal result: {{spiritResult.result}}</p></td>
                 {{#if spiritResult.result}}
                     <td><button id="spiritButton" style="float:right;" onclick="spiritInfo()" class="btn btn-info">more info</button></td>
                 {{/if}}
