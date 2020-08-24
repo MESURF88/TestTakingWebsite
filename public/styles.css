@@ -14,6 +14,15 @@ fieldset {
     padding: 1px;
 }
 
+input[type=radio] {
+    float: left;
+}
+
+label {
+    margin-left: 5px;
+    display: inline;
+}
+
 .button_info {
     display: inline;
     margin: right;
