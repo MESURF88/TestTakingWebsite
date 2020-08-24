@@ -89,11 +89,17 @@ label {
 #congrats {
     width: 100px;
     height: 100px;
+    text-align: center;
     background-color: red;
     position: relative;
     animation-name: example;
-    animation-duration: 3s;
+    animation-duration: 3.5s;
     animation-iteration-count: infinite;
+}
+
+#congrats p{
+    width: 100px;
+    height: 15px;
 }
 
 @keyframes example {

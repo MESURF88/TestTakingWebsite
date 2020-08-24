@@ -62,22 +62,22 @@
         "result": "",
         "result_info": {
             "High-eq": "A high EQ means high receptibility to emotional information, this serves to guide thinking and behavior. High EQ is thought to be the enhanced ability to recognize the emotions in others and leadership skills. A shortcoming is that high EQ correlates to lower creativity and risk-taking.",
-            "Mid-eq": "An average EQ means not much more than being adept at picking up emotions and reading a room but not to the level of someone with high EQ. Overall, a normal capacity to handle emotional information.",
+            "Mid-eq": "An average EQ means being adept at picking up emotions and reading a room. However, not to the extent of an individual with high EQ. Overall, it signifies a normal capacity to handle emotional information.",
             "Low-eq": "a low EQ means low receptibility to emotional information. This could manifest as behaving with less regard for other's emotions and more impulsiveness. Low EQ is linked to lower empathy, which can mean a higher priority of personal ambitions."
         }
     },
     "eopsResult" :  {
         "result": "",
         "result_info": {
-            "Reformer": "Type that is rational, steadfast, perfectionistic and dutiful.",
-            "Helper": "Type that is rational, steadfast, perfectionistic and dutiful.",
-            "Achiever": "Type that is rational, steadfast, perfectionistic and dutiful.",
-            "Individualist": "Type that is rational, steadfast, perfectionistic and dutiful.",
-            "Investigator": "Type that is rational, steadfast, perfectionistic and dutiful.",
-            "Loyalist": "Type that is rational, steadfast, perfectionistic and dutiful.",
-            "Enthusiast": "Type that is rational, steadfast, perfectionistic and dutiful.",
-            "Challenger": "Type that is rational, steadfast, perfectionistic and dutiful.",
-            "Peacemaker": "Type that is agreeable, reassuring, complacent and accomodating."
+            "Reformer": "Type 1, is rational, steadfast, perfectionistic and dutiful.",
+            "Helper": "Type 2, is rational, steadfast, perfectionistic and dutiful.",
+            "Achiever": "Type 3,is rational, steadfast, perfectionistic and dutiful.",
+            "Individualist": "Type 4, is rational, steadfast, perfectionistic and dutiful.",
+            "Investigator": "Type 5, is rational, steadfast, perfectionistic and dutiful.",
+            "Loyalist": "Type 6, is rational, steadfast, perfectionistic and dutiful.",
+            "Enthusiast": "Type 7, is rational, steadfast, perfectionistic and dutiful.",
+            "Challenger": "Type 8, is rational, steadfast, perfectionistic and dutiful.",
+            "Peacemaker": "Type 9, is agreeable, reassuring, complacent and accomodating."
         }
     },
     "chronoResult" :  {
@@ -99,7 +99,7 @@
             "Owl": "A symbol of power, ruggedness and deep connection to the environment.",
             "Peacock": "A symbol of power, ruggedness and deep connection to the environment.",
             "Turtle": "A symbol of power, ruggedness and deep connection to the environment.",
-            "Wolf": "A symbol of primal instincts, cunning and connection to the pack",
+            "Wolf": "A symbol of primal instincts, cunning and connection to the pack.",
             "Dolphin": "A symbol of power, ruggedness and deep connection to the environment.",
             "Tiger": "A symbol of power, ruggedness and deep connection to the environment.",
             "Deer": "A symbol of power, ruggedness and deep connection to the environment."
