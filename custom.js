@@ -2,6 +2,7 @@ module.exports = function(){
     var express = require('express');
     var router = express.Router();
     var fs = require('fs');
+    var url = require('url'); 
 
 /* ----- Read in static JSON file of all descriptions ---- */
 
@@ -28,7 +29,7 @@ function calculate_custom(body){
             ["High-AI","High-A","ISFP","ESFP","I","Explorer","High-eq","Peacemaker","Evening-type","Dolphin"],
             ["High-AC","High-S","INFP","ENTP","S","Negotiator","High-eq","Achiever","Morning-type","Dove"],
             ["High-CS","High-I","INTJ","ISFJ","C","Builder","Low-eq","Achiever","Morning-type","Turtle"],
-            ["High-CE","High-S","ESTJ","ISTP","D","Director","Mid-eq","Loyalist","Day-type","Wolf"],
+            ["High-CE","High-S","ESTJ","ESTP","D","Director","Mid-eq","Loyalist","Day-type","Wolf"],
             ["High-IS","High-C","ISFJ","ISTJ","I","Explorer","Low-eq","Reformer","Morning-type","Deer"],
             ["High-EA","High-E","ENTJ","ESFJ","D","Director","Mid-eq","Helper","Day-type","Elephant"],
             ["High-IE","High-C","ISTJ","ENFP","C","Builder","Low-eq","Loyalist","Evening-type","Hawk"],
@@ -192,7 +193,14 @@ router.get('/', (req, res) => {
 
 //custom results
 router.post('/:id', (req, res) => {
-        calculate_custom(req.body).then(function(key) {
+    //prevent the webpage from recalculating upon redirect from custom
+    var redudant_post = "custom";
+    for (prop in req.body){
+        if(req.body[prop] === ""){
+            redundant_post = "results";
+        }
+    }
+    calculate_custom(req.body).then(function(key) {
         req.session.result_ipip = key['0'];
         req.session.result_jt = key['1'];
         req.session.result_disc = key['2'];
@@ -203,7 +211,12 @@ router.post('/:id', (req, res) => {
         req.session.result_spirit = key['7'];
         req.session.dnd_char = key['dnd_char'];
         req.session.display_check = '1';
-        res.redirect('/results');
+        res.redirect(url.format({
+            pathname:"/results",
+            query: {
+               "reprocess":`${redudant_post}`
+             }
+          }));
     }, function(error) {
         console.error("Failed!", error);
         res.status(404).end();

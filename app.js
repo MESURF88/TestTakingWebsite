@@ -128,8 +128,7 @@ router.get('/results', (req, res) => {
             idx++;
           }
         }
-
-        if (all_defined == 1){
+        if (all_defined == 1 && req.query.reprocess != 'custom'){
           context.animate = '1';
           context.dndCharDisplay = '1';
           //Generate random processing id for current user's dnd character recalculation
