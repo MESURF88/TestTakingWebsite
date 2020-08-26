@@ -52,10 +52,10 @@
     "fpqResult" :  {
         "result": "",
         "result_info": {
-            "Explorer": "Explorers are Curious/Energetic.",
-            "Builder": "Builders are Cautious/Social Norm Compliant.",
-            "Director": "Directors are Analytical/Tough-minded.",
-            "Negotiator": "Negotiators are Prosocial/Empathetic."
+            "Explorer": "Explorers are Curious/Energetic.The associated brain chemicals are dopamine, norepinephrine. ",
+            "Builder": "Builders are Cautious/Social Norm Compliant. The associated brain chemicals are serotonin.",
+            "Director": "Directors are Analytical/Tough-minded. The associated brain chemicals are dopamine, testosterone.",
+            "Negotiator": "Negotiators are Prosocial/Empathetic. The associated brain chemicals are estrogen, oxytocin."
         }
     },
     "eqResult" :  {
@@ -69,14 +69,14 @@
     "eopsResult" :  {
         "result": "",
         "result_info": {
-            "Reformer": "Type 1, is rational, steadfast, perfectionistic and dutiful.",
-            "Helper": "Type 2, is rational, steadfast, perfectionistic and dutiful.",
-            "Achiever": "Type 3,is rational, steadfast, perfectionistic and dutiful.",
-            "Individualist": "Type 4, is rational, steadfast, perfectionistic and dutiful.",
-            "Investigator": "Type 5, is rational, steadfast, perfectionistic and dutiful.",
-            "Loyalist": "Type 6, is rational, steadfast, perfectionistic and dutiful.",
-            "Enthusiast": "Type 7, is rational, steadfast, perfectionistic and dutiful.",
-            "Challenger": "Type 8, is rational, steadfast, perfectionistic and dutiful.",
+            "Reformer": "Type 1, is rational, steadfast, idealistic and dutiful.",
+            "Helper": "Type 2, is generous, demonstrative, caring and overbearing.",
+            "Achiever": "Type 3, is pragmatic, adaptable, driven, and ambitious.",
+            "Individualist": "Type 4, is sensitive, introspective, self-absorbed, and expressive.",
+            "Investigator": "Type 5, is perceptive, innovative, secretive, and cerebral.",
+            "Loyalist": "Type 6, is responsible, secure, commited, and suspicious.",
+            "Enthusiast": "Type 7, is spontaneous, versatile, possessive and distractible.",
+            "Challenger": "Type 8, is decisive, willful, and confident and confrontational.",
             "Peacemaker": "Type 9, is agreeable, reassuring, complacent and accomodating."
         }
     },
@@ -91,18 +91,18 @@
     "spiritResult": {
         "result": "",
         "result_info": {
-            "Bear": "A symbol of power, ruggedness and deep connection to the environment.",
-            "Dove": "A symbol of power, ruggedness and deep connection to the environment.",
-            "Elephant": "A symbol of power, ruggedness and deep connection to the environment.",
-            "Fox": "A symbol of power, ruggedness and deep connection to the environment.",
-            "Hawk": "A symbol of power, ruggedness and deep connection to the environment.",
-            "Owl": "A symbol of power, ruggedness and deep connection to the environment.",
-            "Peacock": "A symbol of power, ruggedness and deep connection to the environment.",
-            "Turtle": "A symbol of power, ruggedness and deep connection to the environment.",
+            "Bear": "A symbol of power, ruggedness and deep connection to the nature.",
+            "Dove": "A symbol of peace, balance and the link between the physical and mystical.",
+            "Elephant": "A symbol of commitment, leadership and imposing presence.",
+            "Fox": "A symbol of tactile prowess, awareness and affinity to the night.",
+            "Hawk": "A symbol of focus, purpose, clarity and individualism.",
+            "Owl": "A symbol of wisdom, aptitude and the gift of perception.",
+            "Peacock": "A symbol of purity, self-confidence, and intrinsic knowledge of potential.",
+            "Turtle": "A symbol of understanding, truth and earthly spirituality",
             "Wolf": "A symbol of primal instincts, cunning and connection to the pack.",
-            "Dolphin": "A symbol of amiability, wisdom and natural ability to communicate and influence.",
+            "Dolphin": "A symbol of amiability, inner strength and natural ability to communicate and influence.",
             "Tiger": "A symbol of raw strength, adaptability and innate intuition.",
-            "Deer": "A symbol of grace, confidence, natural ability and strong instincts."
+            "Deer": "A symbol of grace, confidence, instinctual ability and vigilance."
         }
     }
 }
