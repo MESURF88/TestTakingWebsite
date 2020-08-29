@@ -43,19 +43,19 @@
     "discResult" :  {
         "result": "",
         "result_info": {
-            "D": "Dominance is defined as a person who is competitve, results-oriented, very decisive and adept at solving problems.",
-            "I": "Influence is defined as person who is persuasive, charismatic, ethusiastic and has good interpersonal skills.",
-            "S": "Steadiness is defined as person who is patient, sincere, stable, dutiful and a good team player.",
-            "C": "Conscientiousness is defined as a person who is objective, analytical, precise and is very pragmatic."
+            "D": "Dominance is defined as a person who is competitve, results-oriented, very decisive and adept at solving problems. This individual fears being taken advantage of or appearing weak. In conflict, speaks up about problems and settle the score.",
+            "I": "Influence is defined as person who is persuasive, charismatic, ethusiastic and has good interpersonal skills. This individual fears rejection or being ignored. In conflict, has tendency to gossip and express emotion.",
+            "S": "Steadiness is defined as person who is patient, sincere, stable, dutiful and a good team player. This individual fears letting people down or dramatic change. In conflict, typically puts outside needs ahead of their own.",
+            "C": "Conscientiousness is defined as a person who is objective, analytical, precise and is very pragmatic. This individual fears displaying strong emotion or appearing wrong. In conflict, focuses on facts, logic and objectivity."
         }
     },
     "fpqResult" :  {
         "result": "",
         "result_info": {
-            "Explorer": "Explorers are Curious/Energetic.The associated brain chemicals are dopamine, norepinephrine. ",
-            "Builder": "Builders are Cautious/Social Norm Compliant. The associated brain chemicals are serotonin.",
-            "Director": "Directors are Analytical/Tough-minded. The associated brain chemicals are dopamine, testosterone.",
-            "Negotiator": "Negotiators are Prosocial/Empathetic. The associated brain chemicals are estrogen, oxytocin."
+            "Explorer": "Explorers are Curious/Energetic. They are highly curious, seek new experiences and enjoy novelty. Explorers prefer to live in the moment. They typically have a lot of energy which motivates them to try new things. The associated brain chemicals are dopamine, norepinephrine. ",
+            "Builder": "Builders are Cautious/Social Norm Compliant. They are very precise and value routines and consistency. Builders are typically grounded and fact-based. They prefer to focus on tasks and do them right the first time. The associated brain chemicals are serotonin.",
+            "Director": "Directors are Analytical/Tough-minded. Directors are resourceful, forthcoming and make excellent leaders. They are sure of themselves and very direct when engaging with others. The associated brain chemicals are dopamine, testosterone.",
+            "Negotiator": "Negotiators are Prosocial/Empathetic. Negotiators are highly empathetic, and are skilled at connecting people and creating harmony. They are expressive and like when everyone gets along. The associated brain chemicals are estrogen, oxytocin."
         }
     },
     "eqResult" :  {
@@ -69,15 +69,15 @@
     "eopsResult" :  {
         "result": "",
         "result_info": {
-            "Reformer": "Type 1, is rational, steadfast, idealistic and dutiful.",
-            "Helper": "Type 2, is generous, demonstrative, caring and overbearing.",
-            "Achiever": "Type 3, is pragmatic, adaptable, driven, and ambitious.",
-            "Individualist": "Type 4, is sensitive, introspective, self-absorbed, and expressive.",
-            "Investigator": "Type 5, is perceptive, innovative, secretive, and cerebral.",
-            "Loyalist": "Type 6, is responsible, secure, commited, and suspicious.",
-            "Enthusiast": "Type 7, is spontaneous, versatile, possessive and distractible.",
-            "Challenger": "Type 8, is decisive, willful, and confident and confrontational.",
-            "Peacemaker": "Type 9, is agreeable, reassuring, complacent and accomodating."
+            "Reformer": "Type 1, is rational, steadfast, idealistic and dutiful. They are concerned with making changes and improving. They can impatient, have low tolerance and be overly critical. A 9 wing is known as the idealist and a 2 wing is known as the advocate.",
+            "Helper": "Type 2, is generous, demonstrative, caring and overbearing. They work to maintain harmony and please people. They can become possessive and have need to be appreciated. A 1 wing is known as the servant and a 3 wing is known as the host/hostess.",
+            "Achiever": "Type 3, is pragmatic, adaptable, driven, and ambitious. They wired to strive for progress. This drive to achieve can lead to eogism and workaholism. A 2 wing is known as the charmer and a 4 wing is known as the professional.",
+            "Individualist": "Type 4, is sensitive, introspective, self-absorbed, and expressive. They are authentic and emotionally expressive. They can fall into melancholy and feel vulnerable. A 3 wing is known as the aristocrat and a 5 wing is known as the bohemian.",
+            "Investigator": "Type 5, is perceptive, innovative, secretive, and cerebral. They are independent and thoughtful and see the world in a new way. They have tendency to isolate and overthink. A 4 wing is known as the iconoclast and a 6 wing is known as the problem solver.",
+            "Loyalist": "Type 6, is responsible, secure, commited, and suspicious. They are very effective problem solvers but can be indecisive. They sometimes can be supsicious and overly cautious. A 5 wing is known as the defender and a 7 wing is known as the buddy.",
+            "Enthusiast": "Type 7, is spontaneous, versatile, possessive and distractible. They can develop a variety of skills but have an unfocused approach to mastery. They constantly seek new experiences which can be exhausting. A 6 wing is known as the entertainer and an 8 wing is known as the realist.",
+            "Challenger": "Type 8, is decisive, willful, and confident and confrontational. They seek to control their environment and can be domineering with a tendency for a short temper. It is difficult for this type to be vulnerable. A 7 wing is known as the maverick and a 9 wing is known as the bear.",
+            "Peacemaker": "Type 9, is agreeable, reassuring, complacent and accomodating. They work to ensure peace with others around them and themselves. If disaffected, they can be stubborn but value keeping harmony. An 8 wing is known as the referee and a 1 wing is known as the dreamer."
         }
     },
     "chronoResult" :  {
