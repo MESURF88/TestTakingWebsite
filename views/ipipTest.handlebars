@@ -1,0 +1,3137 @@
+<head>
+<h1 style="text-align: center"><b>ipip</b></h1>
+	<style>
+		body{
+			font-family: 'Roboto', sans-serif;
+			background: #808080;
+			background: -webkit-linear-gradient(to bottom, #CBCBCB,#FFD700,#181818);
+			background: linear-gradient(to bottom, #CBCBCB,#FFD700,#181818);
+			min-height: 100vh;
+			width: 100vw;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="row justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-xs-center">
+<div class="col-lg-auto col-md-auto col-sm-auto col-xs-auto">
+<form id="test_ipipTest" action="/ipipTest/{{id}}" method="post">
+	<fieldset>
+	<h5>Legal Stuff</h5>
+	<p>Credit to the scale, IPIP-NEO-120.</p>
+	<p>(Johnson,2014)</p>
+	<p>Number of questions: 100</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q1</h5>
+		<p>
+			<label><i>Go straight for the goal.</i></label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_0"
+				value = "0" />
+			<label for = "Q0_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_1"
+				value = "1" />
+			<label for = "Q0_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_2"
+				value = "2" />
+			<label for = "Q0_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_3"
+				value = "3" />
+			<label for = "Q0_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_4"
+				value = "4" />
+			<label for = "Q0_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q2</h5>
+		<p>
+			<label><i>Set high standards for myself and others.</i></label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_0"
+				value = "0" />
+			<label for = "Q1_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_1"
+				value = "1" />
+			<label for = "Q1_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_2"
+				value = "2" />
+			<label for = "Q1_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_3"
+				value = "3" />
+			<label for = "Q1_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_4"
+				value = "4" />
+			<label for = "Q1_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q3</h5>
+		<p>
+			<label><i>Turn plans into actions.</i></label></br>
+			<input type = "radio"
+				name = "2"
+				id = "Q2_0"
+				value = "0" />
+			<label for = "Q2_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "2"
+				id = "Q2_1"
+				value = "1" />
+			<label for = "Q2_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "2"
+				id = "Q2_2"
+				value = "2" />
+			<label for = "Q2_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "2"
+				id = "Q2_3"
+				value = "3" />
+			<label for = "Q2_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "2"
+				id = "Q2_4"
+				value = "4" />
+			<label for = "Q2_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q4</h5>
+		<p>
+			<label><i>Put little time and effort into my work.</i></label></br>
+			<input type = "radio"
+				name = "3"
+				id = "Q3_0"
+				value = "0" />
+			<label for = "Q3_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "3"
+				id = "Q3_1"
+				value = "1" />
+			<label for = "Q3_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "3"
+				id = "Q3_2"
+				value = "2" />
+			<label for = "Q3_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "3"
+				id = "Q3_3"
+				value = "3" />
+			<label for = "Q3_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "3"
+				id = "Q3_4"
+				value = "4" />
+			<label for = "Q3_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q5</h5>
+		<p>
+			<label><i>Can manage many things at the same time.</i></label></br>
+			<input type = "radio"
+				name = "4"
+				id = "Q4_0"
+				value = "0" />
+			<label for = "Q4_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "4"
+				id = "Q4_1"
+				value = "1" />
+			<label for = "Q4_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "4"
+				id = "Q4_2"
+				value = "2" />
+			<label for = "Q4_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "4"
+				id = "Q4_3"
+				value = "3" />
+			<label for = "Q4_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "4"
+				id = "Q4_4"
+				value = "4" />
+			<label for = "Q4_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q6</h5>
+		<p>
+			<label><i>Like to take my time.</i></label></br>
+			<input type = "radio"
+				name = "5"
+				id = "Q5_0"
+				value = "0" />
+			<label for = "Q5_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "5"
+				id = "Q5_1"
+				value = "1" />
+			<label for = "Q5_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "5"
+				id = "Q5_2"
+				value = "2" />
+			<label for = "Q5_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "5"
+				id = "Q5_3"
+				value = "3" />
+			<label for = "Q5_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "5"
+				id = "Q5_4"
+				value = "4" />
+			<label for = "Q5_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q7</h5>
+		<p>
+			<label><i>Let things proceed at their own pace.</i></label></br>
+			<input type = "radio"
+				name = "6"
+				id = "Q6_0"
+				value = "0" />
+			<label for = "Q6_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "6"
+				id = "Q6_1"
+				value = "1" />
+			<label for = "Q6_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "6"
+				id = "Q6_2"
+				value = "2" />
+			<label for = "Q6_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "6"
+				id = "Q6_3"
+				value = "3" />
+			<label for = "Q6_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "6"
+				id = "Q6_4"
+				value = "4" />
+			<label for = "Q6_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q8</h5>
+		<p>
+			<label><i>Like to visit new places.</i></label></br>
+			<input type = "radio"
+				name = "7"
+				id = "Q7_0"
+				value = "0" />
+			<label for = "Q7_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "7"
+				id = "Q7_1"
+				value = "1" />
+			<label for = "Q7_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "7"
+				id = "Q7_2"
+				value = "2" />
+			<label for = "Q7_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "7"
+				id = "Q7_3"
+				value = "3" />
+			<label for = "Q7_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "7"
+				id = "Q7_4"
+				value = "4" />
+			<label for = "Q7_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q9</h5>
+		<p>
+			<label><i>Interested in many things.</i></label></br>
+			<input type = "radio"
+				name = "8"
+				id = "Q8_0"
+				value = "0" />
+			<label for = "Q8_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "8"
+				id = "Q8_1"
+				value = "1" />
+			<label for = "Q8_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "8"
+				id = "Q8_2"
+				value = "2" />
+			<label for = "Q8_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "8"
+				id = "Q8_3"
+				value = "3" />
+			<label for = "Q8_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "8"
+				id = "Q8_4"
+				value = "4" />
+			<label for = "Q8_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q10</h5>
+		<p>
+			<label><i>Prefer variety to routine.</i></label></br>
+			<input type = "radio"
+				name = "9"
+				id = "Q9_0"
+				value = "0" />
+			<label for = "Q9_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "9"
+				id = "Q9_1"
+				value = "1" />
+			<label for = "Q9_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "9"
+				id = "Q9_2"
+				value = "2" />
+			<label for = "Q9_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "9"
+				id = "Q9_3"
+				value = "3" />
+			<label for = "Q9_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "9"
+				id = "Q9_4"
+				value = "4" />
+			<label for = "Q9_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q11</h5>
+		<p>
+			<label><i>Dislike changes.</i></label></br>
+			<input type = "radio"
+				name = "10"
+				id = "Q10_0"
+				value = "0" />
+			<label for = "Q10_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "10"
+				id = "Q10_1"
+				value = "1" />
+			<label for = "Q10_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "10"
+				id = "Q10_2"
+				value = "2" />
+			<label for = "Q10_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "10"
+				id = "Q10_3"
+				value = "3" />
+			<label for = "Q10_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "10"
+				id = "Q10_4"
+				value = "4" />
+			<label for = "Q10_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q12</h5>
+		<p>
+			<label><i>Am a creature of habit.</i></label></br>
+			<input type = "radio"
+				name = "11"
+				id = "Q11_0"
+				value = "0" />
+			<label for = "Q11_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "11"
+				id = "Q11_1"
+				value = "1" />
+			<label for = "Q11_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "11"
+				id = "Q11_2"
+				value = "2" />
+			<label for = "Q11_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "11"
+				id = "Q11_3"
+				value = "3" />
+			<label for = "Q11_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "11"
+				id = "Q11_4"
+				value = "4" />
+			<label for = "Q11_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q13</h5>
+		<p>
+			<label><i>Am attached to conventional ways.</i></label></br>
+			<input type = "radio"
+				name = "12"
+				id = "Q12_0"
+				value = "0" />
+			<label for = "Q12_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "12"
+				id = "Q12_1"
+				value = "1" />
+			<label for = "Q12_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "12"
+				id = "Q12_2"
+				value = "2" />
+			<label for = "Q12_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "12"
+				id = "Q12_3"
+				value = "3" />
+			<label for = "Q12_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "12"
+				id = "Q12_4"
+				value = "4" />
+			<label for = "Q12_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q14</h5>
+		<p>
+			<label><i>Do not like art.</i></label></br>
+			<input type = "radio"
+				name = "13"
+				id = "Q13_0"
+				value = "0" />
+			<label for = "Q13_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "13"
+				id = "Q13_1"
+				value = "1" />
+			<label for = "Q13_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "13"
+				id = "Q13_2"
+				value = "2" />
+			<label for = "Q13_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "13"
+				id = "Q13_3"
+				value = "3" />
+			<label for = "Q13_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "13"
+				id = "Q13_4"
+				value = "4" />
+			<label for = "Q13_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q15</h5>
+		<p>
+			<label><i>Do not like concerts.</i></label></br>
+			<input type = "radio"
+				name = "14"
+				id = "Q14_0"
+				value = "0" />
+			<label for = "Q14_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "14"
+				id = "Q14_1"
+				value = "1" />
+			<label for = "Q14_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "14"
+				id = "Q14_2"
+				value = "2" />
+			<label for = "Q14_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "14"
+				id = "Q14_3"
+				value = "3" />
+			<label for = "Q14_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "14"
+				id = "Q14_4"
+				value = "4" />
+			<label for = "Q14_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q16</h5>
+		<p>
+			<label><i>Anticipate the needs of others.</i></label></br>
+			<input type = "radio"
+				name = "15"
+				id = "Q15_0"
+				value = "0" />
+			<label for = "Q15_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "15"
+				id = "Q15_1"
+				value = "1" />
+			<label for = "Q15_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "15"
+				id = "Q15_2"
+				value = "2" />
+			<label for = "Q15_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "15"
+				id = "Q15_3"
+				value = "3" />
+			<label for = "Q15_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "15"
+				id = "Q15_4"
+				value = "4" />
+			<label for = "Q15_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q17</h5>
+		<p>
+			<label><i>Love to help others.</i></label></br>
+			<input type = "radio"
+				name = "16"
+				id = "Q16_0"
+				value = "0" />
+			<label for = "Q16_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "16"
+				id = "Q16_1"
+				value = "1" />
+			<label for = "Q16_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "16"
+				id = "Q16_2"
+				value = "2" />
+			<label for = "Q16_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "16"
+				id = "Q16_3"
+				value = "3" />
+			<label for = "Q16_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "16"
+				id = "Q16_4"
+				value = "4" />
+			<label for = "Q16_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q18</h5>
+		<p>
+			<label><i>Am concerned about others.</i></label></br>
+			<input type = "radio"
+				name = "17"
+				id = "Q17_0"
+				value = "0" />
+			<label for = "Q17_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "17"
+				id = "Q17_1"
+				value = "1" />
+			<label for = "Q17_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "17"
+				id = "Q17_2"
+				value = "2" />
+			<label for = "Q17_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "17"
+				id = "Q17_3"
+				value = "3" />
+			<label for = "Q17_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "17"
+				id = "Q17_4"
+				value = "4" />
+			<label for = "Q17_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q19</h5>
+		<p>
+			<label><i>Seldom get mad.</i></label></br>
+			<input type = "radio"
+				name = "18"
+				id = "Q18_0"
+				value = "0" />
+			<label for = "Q18_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "18"
+				id = "Q18_1"
+				value = "1" />
+			<label for = "Q18_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "18"
+				id = "Q18_2"
+				value = "2" />
+			<label for = "Q18_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "18"
+				id = "Q18_3"
+				value = "3" />
+			<label for = "Q18_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "18"
+				id = "Q18_4"
+				value = "4" />
+			<label for = "Q18_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q20</h5>
+		<p>
+			<label><i>Am afraid of many things.</i></label></br>
+			<input type = "radio"
+				name = "19"
+				id = "Q19_0"
+				value = "0" />
+			<label for = "Q19_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "19"
+				id = "Q19_1"
+				value = "1" />
+			<label for = "Q19_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "19"
+				id = "Q19_2"
+				value = "2" />
+			<label for = "Q19_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "19"
+				id = "Q19_3"
+				value = "3" />
+			<label for = "Q19_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "19"
+				id = "Q19_4"
+				value = "4" />
+			<label for = "Q19_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q21</h5>
+		<p>
+			<label><i>Get stressed out easily.</i></label></br>
+			<input type = "radio"
+				name = "20"
+				id = "Q20_0"
+				value = "0" />
+			<label for = "Q20_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "20"
+				id = "Q20_1"
+				value = "1" />
+			<label for = "Q20_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "20"
+				id = "Q20_2"
+				value = "2" />
+			<label for = "Q20_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "20"
+				id = "Q20_3"
+				value = "3" />
+			<label for = "Q20_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "20"
+				id = "Q20_4"
+				value = "4" />
+			<label for = "Q20_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q22</h5>
+		<p>
+			<label><i>Adapt easily to new situations.</i></label></br>
+			<input type = "radio"
+				name = "21"
+				id = "Q21_0"
+				value = "0" />
+			<label for = "Q21_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "21"
+				id = "Q21_1"
+				value = "1" />
+			<label for = "Q21_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "21"
+				id = "Q21_2"
+				value = "2" />
+			<label for = "Q21_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "21"
+				id = "Q21_3"
+				value = "3" />
+			<label for = "Q21_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "21"
+				id = "Q21_4"
+				value = "4" />
+			<label for = "Q21_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q23</h5>
+		<p>
+			<label><i>Am relaxed most of the time.</i></label></br>
+			<input type = "radio"
+				name = "22"
+				id = "Q22_0"
+				value = "0" />
+			<label for = "Q22_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "22"
+				id = "Q22_1"
+				value = "1" />
+			<label for = "Q22_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "22"
+				id = "Q22_2"
+				value = "2" />
+			<label for = "Q22_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "22"
+				id = "Q22_3"
+				value = "3" />
+			<label for = "Q22_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "22"
+				id = "Q22_4"
+				value = "4" />
+			<label for = "Q22_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q24</h5>
+		<p>
+			<label><i>Take charge.</i></label></br>
+			<input type = "radio"
+				name = "23"
+				id = "Q23_0"
+				value = "0" />
+			<label for = "Q23_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "23"
+				id = "Q23_1"
+				value = "1" />
+			<label for = "Q23_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "23"
+				id = "Q23_2"
+				value = "2" />
+			<label for = "Q23_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "23"
+				id = "Q23_3"
+				value = "3" />
+			<label for = "Q23_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "23"
+				id = "Q23_4"
+				value = "4" />
+			<label for = "Q23_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q25</h5>
+		<p>
+			<label><i>Hold back my opinions.</i></label></br>
+			<input type = "radio"
+				name = "24"
+				id = "Q24_0"
+				value = "0" />
+			<label for = "Q24_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "24"
+				id = "Q24_1"
+				value = "1" />
+			<label for = "Q24_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "24"
+				id = "Q24_2"
+				value = "2" />
+			<label for = "Q24_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "24"
+				id = "Q24_3"
+				value = "3" />
+			<label for = "Q24_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "24"
+				id = "Q24_4"
+				value = "4" />
+			<label for = "Q24_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q26</h5>
+		<p>
+			<label><i>Don't like to draw attention to myself.</i></label></br>
+			<input type = "radio"
+				name = "25"
+				id = "Q25_0"
+				value = "0" />
+			<label for = "Q25_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "25"
+				id = "Q25_1"
+				value = "1" />
+			<label for = "Q25_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "25"
+				id = "Q25_2"
+				value = "2" />
+			<label for = "Q25_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "25"
+				id = "Q25_3"
+				value = "3" />
+			<label for = "Q25_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "25"
+				id = "Q25_4"
+				value = "4" />
+			<label for = "Q25_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q27</h5>
+		<p>
+			<label><i>Stick to my chosen path.</i></label></br>
+			<input type = "radio"
+				name = "26"
+				id = "Q26_0"
+				value = "0" />
+			<label for = "Q26_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "26"
+				id = "Q26_1"
+				value = "1" />
+			<label for = "Q26_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "26"
+				id = "Q26_2"
+				value = "2" />
+			<label for = "Q26_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "26"
+				id = "Q26_3"
+				value = "3" />
+			<label for = "Q26_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "26"
+				id = "Q26_4"
+				value = "4" />
+			<label for = "Q26_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q28</h5>
+		<p>
+			<label><i>Jump into things without thinking.</i></label></br>
+			<input type = "radio"
+				name = "27"
+				id = "Q27_0"
+				value = "0" />
+			<label for = "Q27_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "27"
+				id = "Q27_1"
+				value = "1" />
+			<label for = "Q27_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "27"
+				id = "Q27_2"
+				value = "2" />
+			<label for = "Q27_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "27"
+				id = "Q27_3"
+				value = "3" />
+			<label for = "Q27_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "27"
+				id = "Q27_4"
+				value = "4" />
+			<label for = "Q27_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q29</h5>
+		<p>
+			<label><i>Often make last-minute plans.</i></label></br>
+			<input type = "radio"
+				name = "28"
+				id = "Q28_0"
+				value = "0" />
+			<label for = "Q28_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "28"
+				id = "Q28_1"
+				value = "1" />
+			<label for = "Q28_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "28"
+				id = "Q28_2"
+				value = "2" />
+			<label for = "Q28_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "28"
+				id = "Q28_3"
+				value = "3" />
+			<label for = "Q28_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "28"
+				id = "Q28_4"
+				value = "4" />
+			<label for = "Q28_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q30</h5>
+		<p>
+			<label><i>Amuse my friends.</i></label></br>
+			<input type = "radio"
+				name = "29"
+				id = "Q29_0"
+				value = "0" />
+			<label for = "Q29_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "29"
+				id = "Q29_1"
+				value = "1" />
+			<label for = "Q29_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "29"
+				id = "Q29_2"
+				value = "2" />
+			<label for = "Q29_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "29"
+				id = "Q29_3"
+				value = "3" />
+			<label for = "Q29_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "29"
+				id = "Q29_4"
+				value = "4" />
+			<label for = "Q29_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q31</h5>
+		<p>
+			<label><i>Look at the bright side of life.</i></label></br>
+			<input type = "radio"
+				name = "30"
+				id = "Q30_0"
+				value = "0" />
+			<label for = "Q30_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "30"
+				id = "Q30_1"
+				value = "1" />
+			<label for = "Q30_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "30"
+				id = "Q30_2"
+				value = "2" />
+			<label for = "Q30_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "30"
+				id = "Q30_3"
+				value = "3" />
+			<label for = "Q30_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "30"
+				id = "Q30_4"
+				value = "4" />
+			<label for = "Q30_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q32</h5>
+		<p>
+			<label><i>Am easy to satisfy.</i></label></br>
+			<input type = "radio"
+				name = "31"
+				id = "Q31_0"
+				value = "0" />
+			<label for = "Q31_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "31"
+				id = "Q31_1"
+				value = "1" />
+			<label for = "Q31_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "31"
+				id = "Q31_2"
+				value = "2" />
+			<label for = "Q31_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "31"
+				id = "Q31_3"
+				value = "3" />
+			<label for = "Q31_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "31"
+				id = "Q31_4"
+				value = "4" />
+			<label for = "Q31_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q33</h5>
+		<p>
+			<label><i>Can't stand confrontations.</i></label></br>
+			<input type = "radio"
+				name = "32"
+				id = "Q32_0"
+				value = "0" />
+			<label for = "Q32_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "32"
+				id = "Q32_1"
+				value = "1" />
+			<label for = "Q32_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "32"
+				id = "Q32_2"
+				value = "2" />
+			<label for = "Q32_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "32"
+				id = "Q32_3"
+				value = "3" />
+			<label for = "Q32_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "32"
+				id = "Q32_4"
+				value = "4" />
+			<label for = "Q32_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q34</h5>
+		<p>
+			<label><i>Hate to seem pushy.</i></label></br>
+			<input type = "radio"
+				name = "33"
+				id = "Q33_0"
+				value = "0" />
+			<label for = "Q33_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "33"
+				id = "Q33_1"
+				value = "1" />
+			<label for = "Q33_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "33"
+				id = "Q33_2"
+				value = "2" />
+			<label for = "Q33_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "33"
+				id = "Q33_3"
+				value = "3" />
+			<label for = "Q33_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "33"
+				id = "Q33_4"
+				value = "4" />
+			<label for = "Q33_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q35</h5>
+		<p>
+			<label><i>Contradict others.</i></label></br>
+			<input type = "radio"
+				name = "34"
+				id = "Q34_0"
+				value = "0" />
+			<label for = "Q34_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "34"
+				id = "Q34_1"
+				value = "1" />
+			<label for = "Q34_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "34"
+				id = "Q34_2"
+				value = "2" />
+			<label for = "Q34_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "34"
+				id = "Q34_3"
+				value = "3" />
+			<label for = "Q34_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "34"
+				id = "Q34_4"
+				value = "4" />
+			<label for = "Q34_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q36</h5>
+		<p>
+			<label><i>Am often down in the dumps.</i></label></br>
+			<input type = "radio"
+				name = "35"
+				id = "Q35_0"
+				value = "0" />
+			<label for = "Q35_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "35"
+				id = "Q35_1"
+				value = "1" />
+			<label for = "Q35_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "35"
+				id = "Q35_2"
+				value = "2" />
+			<label for = "Q35_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "35"
+				id = "Q35_3"
+				value = "3" />
+			<label for = "Q35_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "35"
+				id = "Q35_4"
+				value = "4" />
+			<label for = "Q35_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q37</h5>
+		<p>
+			<label><i>Have a low opinion of myself.</i></label></br>
+			<input type = "radio"
+				name = "36"
+				id = "Q36_0"
+				value = "0" />
+			<label for = "Q36_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "36"
+				id = "Q36_1"
+				value = "1" />
+			<label for = "Q36_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "36"
+				id = "Q36_2"
+				value = "2" />
+			<label for = "Q36_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "36"
+				id = "Q36_3"
+				value = "3" />
+			<label for = "Q36_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "36"
+				id = "Q36_4"
+				value = "4" />
+			<label for = "Q36_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q38</h5>
+		<p>
+			<label><i>Feel comfortable with myself.</i></label></br>
+			<input type = "radio"
+				name = "37"
+				id = "Q37_0"
+				value = "0" />
+			<label for = "Q37_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "37"
+				id = "Q37_1"
+				value = "1" />
+			<label for = "Q37_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "37"
+				id = "Q37_2"
+				value = "2" />
+			<label for = "Q37_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "37"
+				id = "Q37_3"
+				value = "3" />
+			<label for = "Q37_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "37"
+				id = "Q37_4"
+				value = "4" />
+			<label for = "Q37_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q39</h5>
+		<p>
+			<label><i>Keep my promises.</i></label></br>
+			<input type = "radio"
+				name = "38"
+				id = "Q38_0"
+				value = "0" />
+			<label for = "Q38_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "38"
+				id = "Q38_1"
+				value = "1" />
+			<label for = "Q38_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "38"
+				id = "Q38_2"
+				value = "2" />
+			<label for = "Q38_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "38"
+				id = "Q38_3"
+				value = "3" />
+			<label for = "Q38_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "38"
+				id = "Q38_4"
+				value = "4" />
+			<label for = "Q38_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q40</h5>
+		<p>
+			<label><i>Tell the truth.</i></label></br>
+			<input type = "radio"
+				name = "39"
+				id = "Q39_0"
+				value = "0" />
+			<label for = "Q39_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "39"
+				id = "Q39_1"
+				value = "1" />
+			<label for = "Q39_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "39"
+				id = "Q39_2"
+				value = "2" />
+			<label for = "Q39_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "39"
+				id = "Q39_3"
+				value = "3" />
+			<label for = "Q39_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "39"
+				id = "Q39_4"
+				value = "4" />
+			<label for = "Q39_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q41</h5>
+		<p>
+			<label><i>Try to follow the rules.</i></label></br>
+			<input type = "radio"
+				name = "40"
+				id = "Q40_0"
+				value = "0" />
+			<label for = "Q40_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "40"
+				id = "Q40_1"
+				value = "1" />
+			<label for = "Q40_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "40"
+				id = "Q40_2"
+				value = "2" />
+			<label for = "Q40_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "40"
+				id = "Q40_3"
+				value = "3" />
+			<label for = "Q40_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "40"
+				id = "Q40_4"
+				value = "4" />
+			<label for = "Q40_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q42</h5>
+		<p>
+			<label><i>Misrepresent the facts.</i></label></br>
+			<input type = "radio"
+				name = "41"
+				id = "Q41_0"
+				value = "0" />
+			<label for = "Q41_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "41"
+				id = "Q41_1"
+				value = "1" />
+			<label for = "Q41_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "41"
+				id = "Q41_2"
+				value = "2" />
+			<label for = "Q41_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "41"
+				id = "Q41_3"
+				value = "3" />
+			<label for = "Q41_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "41"
+				id = "Q41_4"
+				value = "4" />
+			<label for = "Q41_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q43</h5>
+		<p>
+			<label><i>Get others to do my duties.</i></label></br>
+			<input type = "radio"
+				name = "42"
+				id = "Q42_0"
+				value = "0" />
+			<label for = "Q42_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "42"
+				id = "Q42_1"
+				value = "1" />
+			<label for = "Q42_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "42"
+				id = "Q42_2"
+				value = "2" />
+			<label for = "Q42_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "42"
+				id = "Q42_3"
+				value = "3" />
+			<label for = "Q42_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "42"
+				id = "Q42_4"
+				value = "4" />
+			<label for = "Q42_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q44</h5>
+		<p>
+			<label><i>Feel others' emotions.</i></label></br>
+			<input type = "radio"
+				name = "43"
+				id = "Q43_0"
+				value = "0" />
+			<label for = "Q43_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "43"
+				id = "Q43_1"
+				value = "1" />
+			<label for = "Q43_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "43"
+				id = "Q43_2"
+				value = "2" />
+			<label for = "Q43_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "43"
+				id = "Q43_3"
+				value = "3" />
+			<label for = "Q43_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "43"
+				id = "Q43_4"
+				value = "4" />
+			<label for = "Q43_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q45</h5>
+		<p>
+			<label><i>Enjoy examining myself and my life.</i></label></br>
+			<input type = "radio"
+				name = "44"
+				id = "Q44_0"
+				value = "0" />
+			<label for = "Q44_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "44"
+				id = "Q44_1"
+				value = "1" />
+			<label for = "Q44_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "44"
+				id = "Q44_2"
+				value = "2" />
+			<label for = "Q44_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "44"
+				id = "Q44_3"
+				value = "3" />
+			<label for = "Q44_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "44"
+				id = "Q44_4"
+				value = "4" />
+			<label for = "Q44_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q46</h5>
+		<p>
+			<label><i>Don't understand people who get emotional.</i></label></br>
+			<input type = "radio"
+				name = "45"
+				id = "Q45_0"
+				value = "0" />
+			<label for = "Q45_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "45"
+				id = "Q45_1"
+				value = "1" />
+			<label for = "Q45_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "45"
+				id = "Q45_2"
+				value = "2" />
+			<label for = "Q45_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "45"
+				id = "Q45_3"
+				value = "3" />
+			<label for = "Q45_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "45"
+				id = "Q45_4"
+				value = "4" />
+			<label for = "Q45_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q47</h5>
+		<p>
+			<label><i>Love excitement.</i></label></br>
+			<input type = "radio"
+				name = "46"
+				id = "Q46_0"
+				value = "0" />
+			<label for = "Q46_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "46"
+				id = "Q46_1"
+				value = "1" />
+			<label for = "Q46_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "46"
+				id = "Q46_2"
+				value = "2" />
+			<label for = "Q46_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "46"
+				id = "Q46_3"
+				value = "3" />
+			<label for = "Q46_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "46"
+				id = "Q46_4"
+				value = "4" />
+			<label for = "Q46_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q48</h5>
+		<p>
+			<label><i>Willing to try anything once.</i></label></br>
+			<input type = "radio"
+				name = "47"
+				id = "Q47_0"
+				value = "0" />
+			<label for = "Q47_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "47"
+				id = "Q47_1"
+				value = "1" />
+			<label for = "Q47_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "47"
+				id = "Q47_2"
+				value = "2" />
+			<label for = "Q47_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "47"
+				id = "Q47_3"
+				value = "3" />
+			<label for = "Q47_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "47"
+				id = "Q47_4"
+				value = "4" />
+			<label for = "Q47_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q49</h5>
+		<p>
+			<label><i>Seek adventure.</i></label></br>
+			<input type = "radio"
+				name = "48"
+				id = "Q48_0"
+				value = "0" />
+			<label for = "Q48_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "48"
+				id = "Q48_1"
+				value = "1" />
+			<label for = "Q48_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "48"
+				id = "Q48_2"
+				value = "2" />
+			<label for = "Q48_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "48"
+				id = "Q48_3"
+				value = "3" />
+			<label for = "Q48_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "48"
+				id = "Q48_4"
+				value = "4" />
+			<label for = "Q48_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q50</h5>
+		<p>
+			<label><i>Act comfortably with others.</i></label></br>
+			<input type = "radio"
+				name = "49"
+				id = "Q49_0"
+				value = "0" />
+			<label for = "Q49_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "49"
+				id = "Q49_1"
+				value = "1" />
+			<label for = "Q49_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "49"
+				id = "Q49_2"
+				value = "2" />
+			<label for = "Q49_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "49"
+				id = "Q49_3"
+				value = "3" />
+			<label for = "Q49_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "49"
+				id = "Q49_4"
+				value = "4" />
+			<label for = "Q49_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q51</h5>
+		<p>
+			<label><i>Keep others at a distance.</i></label></br>
+			<input type = "radio"
+				name = "50"
+				id = "Q50_0"
+				value = "0" />
+			<label for = "Q50_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "50"
+				id = "Q50_1"
+				value = "1" />
+			<label for = "Q50_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "50"
+				id = "Q50_2"
+				value = "2" />
+			<label for = "Q50_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "50"
+				id = "Q50_3"
+				value = "3" />
+			<label for = "Q50_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "50"
+				id = "Q50_4"
+				value = "4" />
+			<label for = "Q50_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q52</h5>
+		<p>
+			<label><i>Avoid contacts with others.</i></label></br>
+			<input type = "radio"
+				name = "51"
+				id = "Q51_0"
+				value = "0" />
+			<label for = "Q51_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "51"
+				id = "Q51_1"
+				value = "1" />
+			<label for = "Q51_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "51"
+				id = "Q51_2"
+				value = "2" />
+			<label for = "Q51_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "51"
+				id = "Q51_3"
+				value = "3" />
+			<label for = "Q51_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "51"
+				id = "Q51_4"
+				value = "4" />
+			<label for = "Q51_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q53</h5>
+		<p>
+			<label><i>Am hard to get to know.</i></label></br>
+			<input type = "radio"
+				name = "52"
+				id = "Q52_0"
+				value = "0" />
+			<label for = "Q52_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "52"
+				id = "Q52_1"
+				value = "1" />
+			<label for = "Q52_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "52"
+				id = "Q52_2"
+				value = "2" />
+			<label for = "Q52_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "52"
+				id = "Q52_3"
+				value = "3" />
+			<label for = "Q52_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "52"
+				id = "Q52_4"
+				value = "4" />
+			<label for = "Q52_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q54</h5>
+		<p>
+			<label><i>Involve others in what I am doing.</i></label></br>
+			<input type = "radio"
+				name = "53"
+				id = "Q53_0"
+				value = "0" />
+			<label for = "Q53_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "53"
+				id = "Q53_1"
+				value = "1" />
+			<label for = "Q53_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "53"
+				id = "Q53_2"
+				value = "2" />
+			<label for = "Q53_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "53"
+				id = "Q53_3"
+				value = "3" />
+			<label for = "Q53_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "53"
+				id = "Q53_4"
+				value = "4" />
+			<label for = "Q53_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q55</h5>
+		<p>
+			<label><i>Talk to a lot of different people at parties.</i></label></br>
+			<input type = "radio"
+				name = "54"
+				id = "Q54_0"
+				value = "0" />
+			<label for = "Q54_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "54"
+				id = "Q54_1"
+				value = "1" />
+			<label for = "Q54_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "54"
+				id = "Q54_2"
+				value = "2" />
+			<label for = "Q54_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "54"
+				id = "Q54_3"
+				value = "3" />
+			<label for = "Q54_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "54"
+				id = "Q54_4"
+				value = "4" />
+			<label for = "Q54_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q56</h5>
+		<p>
+			<label><i>Prefer to be alone.</i></label></br>
+			<input type = "radio"
+				name = "55"
+				id = "Q55_0"
+				value = "0" />
+			<label for = "Q55_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "55"
+				id = "Q55_1"
+				value = "1" />
+			<label for = "Q55_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "55"
+				id = "Q55_2"
+				value = "2" />
+			<label for = "Q55_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "55"
+				id = "Q55_3"
+				value = "3" />
+			<label for = "Q55_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "55"
+				id = "Q55_4"
+				value = "4" />
+			<label for = "Q55_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q57</h5>
+		<p>
+			<label><i>Seek quiet.</i></label></br>
+			<input type = "radio"
+				name = "56"
+				id = "Q56_0"
+				value = "0" />
+			<label for = "Q56_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "56"
+				id = "Q56_1"
+				value = "1" />
+			<label for = "Q56_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "56"
+				id = "Q56_2"
+				value = "2" />
+			<label for = "Q56_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "56"
+				id = "Q56_3"
+				value = "3" />
+			<label for = "Q56_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "56"
+				id = "Q56_4"
+				value = "4" />
+			<label for = "Q56_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q58</h5>
+		<p>
+			<label><i>Want to be left alone.</i></label></br>
+			<input type = "radio"
+				name = "57"
+				id = "Q57_0"
+				value = "0" />
+			<label for = "Q57_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "57"
+				id = "Q57_1"
+				value = "1" />
+			<label for = "Q57_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "57"
+				id = "Q57_2"
+				value = "2" />
+			<label for = "Q57_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "57"
+				id = "Q57_3"
+				value = "3" />
+			<label for = "Q57_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "57"
+				id = "Q57_4"
+				value = "4" />
+			<label for = "Q57_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q59</h5>
+		<p>
+			<label><i>Like to get lost in thought.</i></label></br>
+			<input type = "radio"
+				name = "58"
+				id = "Q58_0"
+				value = "0" />
+			<label for = "Q58_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "58"
+				id = "Q58_1"
+				value = "1" />
+			<label for = "Q58_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "58"
+				id = "Q58_2"
+				value = "2" />
+			<label for = "Q58_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "58"
+				id = "Q58_3"
+				value = "3" />
+			<label for = "Q58_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "58"
+				id = "Q58_4"
+				value = "4" />
+			<label for = "Q58_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q60</h5>
+		<p>
+			<label><i>Have a vivid imagination.</i></label></br>
+			<input type = "radio"
+				name = "59"
+				id = "Q59_0"
+				value = "0" />
+			<label for = "Q59_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "59"
+				id = "Q59_1"
+				value = "1" />
+			<label for = "Q59_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "59"
+				id = "Q59_2"
+				value = "2" />
+			<label for = "Q59_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "59"
+				id = "Q59_3"
+				value = "3" />
+			<label for = "Q59_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "59"
+				id = "Q59_4"
+				value = "4" />
+			<label for = "Q59_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q61</h5>
+		<p>
+			<label><i>Spend time reflecting on things.</i></label></br>
+			<input type = "radio"
+				name = "60"
+				id = "Q60_0"
+				value = "0" />
+			<label for = "Q60_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "60"
+				id = "Q60_1"
+				value = "1" />
+			<label for = "Q60_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "60"
+				id = "Q60_2"
+				value = "2" />
+			<label for = "Q60_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "60"
+				id = "Q60_3"
+				value = "3" />
+			<label for = "Q60_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "60"
+				id = "Q60_4"
+				value = "4" />
+			<label for = "Q60_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q62</h5>
+		<p>
+			<label><i>Have difficulty imagining things.</i></label></br>
+			<input type = "radio"
+				name = "61"
+				id = "Q61_0"
+				value = "0" />
+			<label for = "Q61_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "61"
+				id = "Q61_1"
+				value = "1" />
+			<label for = "Q61_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "61"
+				id = "Q61_2"
+				value = "2" />
+			<label for = "Q61_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "61"
+				id = "Q61_3"
+				value = "3" />
+			<label for = "Q61_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "61"
+				id = "Q61_4"
+				value = "4" />
+			<label for = "Q61_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q63</h5>
+		<p>
+			<label><i>Don't know why I do some of the things I do.</i></label></br>
+			<input type = "radio"
+				name = "62"
+				id = "Q62_0"
+				value = "0" />
+			<label for = "Q62_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "62"
+				id = "Q62_1"
+				value = "1" />
+			<label for = "Q62_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "62"
+				id = "Q62_2"
+				value = "2" />
+			<label for = "Q62_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "62"
+				id = "Q62_3"
+				value = "3" />
+			<label for = "Q62_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "62"
+				id = "Q62_4"
+				value = "4" />
+			<label for = "Q62_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q64</h5>
+		<p>
+			<label><i>Go on binges.</i></label></br>
+			<input type = "radio"
+				name = "63"
+				id = "Q63_0"
+				value = "0" />
+			<label for = "Q63_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "63"
+				id = "Q63_1"
+				value = "1" />
+			<label for = "Q63_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "63"
+				id = "Q63_2"
+				value = "2" />
+			<label for = "Q63_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "63"
+				id = "Q63_3"
+				value = "3" />
+			<label for = "Q63_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "63"
+				id = "Q63_4"
+				value = "4" />
+			<label for = "Q63_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q65</h5>
+		<p>
+			<label><i>Never spend more than I can afford.</i></label></br>
+			<input type = "radio"
+				name = "64"
+				id = "Q64_0"
+				value = "0" />
+			<label for = "Q64_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "64"
+				id = "Q64_1"
+				value = "1" />
+			<label for = "Q64_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "64"
+				id = "Q64_2"
+				value = "2" />
+			<label for = "Q64_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "64"
+				id = "Q64_3"
+				value = "3" />
+			<label for = "Q64_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "64"
+				id = "Q64_4"
+				value = "4" />
+			<label for = "Q64_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q66</h5>
+		<p>
+			<label><i>Easily resist temptations.</i></label></br>
+			<input type = "radio"
+				name = "65"
+				id = "Q65_0"
+				value = "0" />
+			<label for = "Q65_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "65"
+				id = "Q65_1"
+				value = "1" />
+			<label for = "Q65_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "65"
+				id = "Q65_2"
+				value = "2" />
+			<label for = "Q65_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "65"
+				id = "Q65_3"
+				value = "3" />
+			<label for = "Q65_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "65"
+				id = "Q65_4"
+				value = "4" />
+			<label for = "Q65_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q67</h5>
+		<p>
+			<label><i>Can handle a lot of information.</i></label></br>
+			<input type = "radio"
+				name = "66"
+				id = "Q66_0"
+				value = "0" />
+			<label for = "Q66_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "66"
+				id = "Q66_1"
+				value = "1" />
+			<label for = "Q66_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "66"
+				id = "Q66_2"
+				value = "2" />
+			<label for = "Q66_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "66"
+				id = "Q66_3"
+				value = "3" />
+			<label for = "Q66_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "66"
+				id = "Q66_4"
+				value = "4" />
+			<label for = "Q66_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q68</h5>
+		<p>
+			<label><i>Enjoy thinking about things.</i></label></br>
+			<input type = "radio"
+				name = "67"
+				id = "Q67_0"
+				value = "0" />
+			<label for = "Q67_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "67"
+				id = "Q67_1"
+				value = "1" />
+			<label for = "Q67_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "67"
+				id = "Q67_2"
+				value = "2" />
+			<label for = "Q67_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "67"
+				id = "Q67_3"
+				value = "3" />
+			<label for = "Q67_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "67"
+				id = "Q67_4"
+				value = "4" />
+			<label for = "Q67_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q69</h5>
+		<p>
+			<label><i>Like to solve complex problems.</i></label></br>
+			<input type = "radio"
+				name = "68"
+				id = "Q68_0"
+				value = "0" />
+			<label for = "Q68_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "68"
+				id = "Q68_1"
+				value = "1" />
+			<label for = "Q68_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "68"
+				id = "Q68_2"
+				value = "2" />
+			<label for = "Q68_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "68"
+				id = "Q68_3"
+				value = "3" />
+			<label for = "Q68_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "68"
+				id = "Q68_4"
+				value = "4" />
+			<label for = "Q68_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q70</h5>
+		<p>
+			<label><i>Love to read challenging material.</i></label></br>
+			<input type = "radio"
+				name = "69"
+				id = "Q69_0"
+				value = "0" />
+			<label for = "Q69_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "69"
+				id = "Q69_1"
+				value = "1" />
+			<label for = "Q69_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "69"
+				id = "Q69_2"
+				value = "2" />
+			<label for = "Q69_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "69"
+				id = "Q69_3"
+				value = "3" />
+			<label for = "Q69_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "69"
+				id = "Q69_4"
+				value = "4" />
+			<label for = "Q69_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q71</h5>
+		<p>
+			<label><i>Avoid philosophical discussions.</i></label></br>
+			<input type = "radio"
+				name = "70"
+				id = "Q70_0"
+				value = "0" />
+			<label for = "Q70_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "70"
+				id = "Q70_1"
+				value = "1" />
+			<label for = "Q70_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "70"
+				id = "Q70_2"
+				value = "2" />
+			<label for = "Q70_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "70"
+				id = "Q70_3"
+				value = "3" />
+			<label for = "Q70_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "70"
+				id = "Q70_4"
+				value = "4" />
+			<label for = "Q70_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q72</h5>
+		<p>
+			<label><i>Believe that there is no absolute right or wrong.</i></label></br>
+			<input type = "radio"
+				name = "71"
+				id = "Q71_0"
+				value = "0" />
+			<label for = "Q71_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "71"
+				id = "Q71_1"
+				value = "1" />
+			<label for = "Q71_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "71"
+				id = "Q71_2"
+				value = "2" />
+			<label for = "Q71_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "71"
+				id = "Q71_3"
+				value = "3" />
+			<label for = "Q71_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "71"
+				id = "Q71_4"
+				value = "4" />
+			<label for = "Q71_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q73</h5>
+		<p>
+			<label><i>Believe in one true religion.</i></label></br>
+			<input type = "radio"
+				name = "72"
+				id = "Q72_0"
+				value = "0" />
+			<label for = "Q72_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "72"
+				id = "Q72_1"
+				value = "1" />
+			<label for = "Q72_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "72"
+				id = "Q72_2"
+				value = "2" />
+			<label for = "Q72_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "72"
+				id = "Q72_3"
+				value = "3" />
+			<label for = "Q72_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "72"
+				id = "Q72_4"
+				value = "4" />
+			<label for = "Q72_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q74</h5>
+		<p>
+			<label><i>Dislike being the center of attention.</i></label></br>
+			<input type = "radio"
+				name = "73"
+				id = "Q73_0"
+				value = "0" />
+			<label for = "Q73_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "73"
+				id = "Q73_1"
+				value = "1" />
+			<label for = "Q73_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "73"
+				id = "Q73_2"
+				value = "2" />
+			<label for = "Q73_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "73"
+				id = "Q73_3"
+				value = "3" />
+			<label for = "Q73_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "73"
+				id = "Q73_4"
+				value = "4" />
+			<label for = "Q73_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q75</h5>
+		<p>
+			<label><i>Boast about my virtues.</i></label></br>
+			<input type = "radio"
+				name = "74"
+				id = "Q74_0"
+				value = "0" />
+			<label for = "Q74_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "74"
+				id = "Q74_1"
+				value = "1" />
+			<label for = "Q74_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "74"
+				id = "Q74_2"
+				value = "2" />
+			<label for = "Q74_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "74"
+				id = "Q74_3"
+				value = "3" />
+			<label for = "Q74_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "74"
+				id = "Q74_4"
+				value = "4" />
+			<label for = "Q74_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q76</h5>
+		<p>
+			<label><i>Cheat to get ahead.</i></label></br>
+			<input type = "radio"
+				name = "75"
+				id = "Q75_0"
+				value = "0" />
+			<label for = "Q75_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "75"
+				id = "Q75_1"
+				value = "1" />
+			<label for = "Q75_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "75"
+				id = "Q75_2"
+				value = "2" />
+			<label for = "Q75_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "75"
+				id = "Q75_3"
+				value = "3" />
+			<label for = "Q75_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "75"
+				id = "Q75_4"
+				value = "4" />
+			<label for = "Q75_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q77</h5>
+		<p>
+			<label><i>Pretend to be concerned for others.</i></label></br>
+			<input type = "radio"
+				name = "76"
+				id = "Q76_0"
+				value = "0" />
+			<label for = "Q76_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "76"
+				id = "Q76_1"
+				value = "1" />
+			<label for = "Q76_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "76"
+				id = "Q76_2"
+				value = "2" />
+			<label for = "Q76_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "76"
+				id = "Q76_3"
+				value = "3" />
+			<label for = "Q76_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "76"
+				id = "Q76_4"
+				value = "4" />
+			<label for = "Q76_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q78</h5>
+		<p>
+			<label><i>Do things according to a plan.</i></label></br>
+			<input type = "radio"
+				name = "77"
+				id = "Q77_0"
+				value = "0" />
+			<label for = "Q77_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "77"
+				id = "Q77_1"
+				value = "1" />
+			<label for = "Q77_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "77"
+				id = "Q77_2"
+				value = "2" />
+			<label for = "Q77_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "77"
+				id = "Q77_3"
+				value = "3" />
+			<label for = "Q77_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "77"
+				id = "Q77_4"
+				value = "4" />
+			<label for = "Q77_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q79</h5>
+		<p>
+			<label><i>Love order and regularity.</i></label></br>
+			<input type = "radio"
+				name = "78"
+				id = "Q78_0"
+				value = "0" />
+			<label for = "Q78_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "78"
+				id = "Q78_1"
+				value = "1" />
+			<label for = "Q78_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "78"
+				id = "Q78_2"
+				value = "2" />
+			<label for = "Q78_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "78"
+				id = "Q78_3"
+				value = "3" />
+			<label for = "Q78_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "78"
+				id = "Q78_4"
+				value = "4" />
+			<label for = "Q78_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q80</h5>
+		<p>
+			<label><i>Am not bothered by disorder.</i></label></br>
+			<input type = "radio"
+				name = "79"
+				id = "Q79_0"
+				value = "0" />
+			<label for = "Q79_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "79"
+				id = "Q79_1"
+				value = "1" />
+			<label for = "Q79_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "79"
+				id = "Q79_2"
+				value = "2" />
+			<label for = "Q79_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "79"
+				id = "Q79_3"
+				value = "3" />
+			<label for = "Q79_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "79"
+				id = "Q79_4"
+				value = "4" />
+			<label for = "Q79_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q81</h5>
+		<p>
+			<label><i>Leave my belongings around.</i></label></br>
+			<input type = "radio"
+				name = "80"
+				id = "Q80_0"
+				value = "0" />
+			<label for = "Q80_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "80"
+				id = "Q80_1"
+				value = "1" />
+			<label for = "Q80_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "80"
+				id = "Q80_2"
+				value = "2" />
+			<label for = "Q80_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "80"
+				id = "Q80_3"
+				value = "3" />
+			<label for = "Q80_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "80"
+				id = "Q80_4"
+				value = "4" />
+			<label for = "Q80_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q82</h5>
+		<p>
+			<label><i>Am afraid that I will do the wrong thing.</i></label></br>
+			<input type = "radio"
+				name = "81"
+				id = "Q81_0"
+				value = "0" />
+			<label for = "Q81_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "81"
+				id = "Q81_1"
+				value = "1" />
+			<label for = "Q81_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "81"
+				id = "Q81_2"
+				value = "2" />
+			<label for = "Q81_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "81"
+				id = "Q81_3"
+				value = "3" />
+			<label for = "Q81_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "81"
+				id = "Q81_4"
+				value = "4" />
+			<label for = "Q81_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q83</h5>
+		<p>
+			<label><i>Am able to stand up for myself.</i></label></br>
+			<input type = "radio"
+				name = "82"
+				id = "Q82_0"
+				value = "0" />
+			<label for = "Q82_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "82"
+				id = "Q82_1"
+				value = "1" />
+			<label for = "Q82_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "82"
+				id = "Q82_2"
+				value = "2" />
+			<label for = "Q82_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "82"
+				id = "Q82_3"
+				value = "3" />
+			<label for = "Q82_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "82"
+				id = "Q82_4"
+				value = "4" />
+			<label for = "Q82_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q84</h5>
+		<p>
+			<label><i>Am comfortable in unfamiliar situations.</i></label></br>
+			<input type = "radio"
+				name = "83"
+				id = "Q83_0"
+				value = "0" />
+			<label for = "Q83_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "83"
+				id = "Q83_1"
+				value = "1" />
+			<label for = "Q83_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "83"
+				id = "Q83_2"
+				value = "2" />
+			<label for = "Q83_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "83"
+				id = "Q83_3"
+				value = "3" />
+			<label for = "Q83_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "83"
+				id = "Q83_4"
+				value = "4" />
+			<label for = "Q83_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q85</h5>
+		<p>
+			<label><i>Am always prepared.</i></label></br>
+			<input type = "radio"
+				name = "84"
+				id = "Q84_0"
+				value = "0" />
+			<label for = "Q84_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "84"
+				id = "Q84_1"
+				value = "1" />
+			<label for = "Q84_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "84"
+				id = "Q84_2"
+				value = "2" />
+			<label for = "Q84_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "84"
+				id = "Q84_3"
+				value = "3" />
+			<label for = "Q84_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "84"
+				id = "Q84_4"
+				value = "4" />
+			<label for = "Q84_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q86</h5>
+		<p>
+			<label><i>Start tasks right away.</i></label></br>
+			<input type = "radio"
+				name = "85"
+				id = "Q85_0"
+				value = "0" />
+			<label for = "Q85_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "85"
+				id = "Q85_1"
+				value = "1" />
+			<label for = "Q85_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "85"
+				id = "Q85_2"
+				value = "2" />
+			<label for = "Q85_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "85"
+				id = "Q85_3"
+				value = "3" />
+			<label for = "Q85_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "85"
+				id = "Q85_4"
+				value = "4" />
+			<label for = "Q85_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q87</h5>
+		<p>
+			<label><i>Postpone decisions.</i></label></br>
+			<input type = "radio"
+				name = "86"
+				id = "Q86_0"
+				value = "0" />
+			<label for = "Q86_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "86"
+				id = "Q86_1"
+				value = "1" />
+			<label for = "Q86_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "86"
+				id = "Q86_2"
+				value = "2" />
+			<label for = "Q86_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "86"
+				id = "Q86_3"
+				value = "3" />
+			<label for = "Q86_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "86"
+				id = "Q86_4"
+				value = "4" />
+			<label for = "Q86_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q88</h5>
+		<p>
+			<label><i>Value cooperation over competition.</i></label></br>
+			<input type = "radio"
+				name = "87"
+				id = "Q87_0"
+				value = "0" />
+			<label for = "Q87_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "87"
+				id = "Q87_1"
+				value = "1" />
+			<label for = "Q87_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "87"
+				id = "Q87_2"
+				value = "2" />
+			<label for = "Q87_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "87"
+				id = "Q87_3"
+				value = "3" />
+			<label for = "Q87_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "87"
+				id = "Q87_4"
+				value = "4" />
+			<label for = "Q87_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q89</h5>
+		<p>
+			<label><i>Believe people should fend for themselves.</i></label></br>
+			<input type = "radio"
+				name = "88"
+				id = "Q88_0"
+				value = "0" />
+			<label for = "Q88_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "88"
+				id = "Q88_1"
+				value = "1" />
+			<label for = "Q88_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "88"
+				id = "Q88_2"
+				value = "2" />
+			<label for = "Q88_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "88"
+				id = "Q88_3"
+				value = "3" />
+			<label for = "Q88_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "88"
+				id = "Q88_4"
+				value = "4" />
+			<label for = "Q88_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q90</h5>
+		<p>
+			<label><i>Suspect hidden motives in others.</i></label></br>
+			<input type = "radio"
+				name = "89"
+				id = "Q89_0"
+				value = "0" />
+			<label for = "Q89_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "89"
+				id = "Q89_1"
+				value = "1" />
+			<label for = "Q89_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "89"
+				id = "Q89_2"
+				value = "2" />
+			<label for = "Q89_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "89"
+				id = "Q89_3"
+				value = "3" />
+			<label for = "Q89_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "89"
+				id = "Q89_4"
+				value = "4" />
+			<label for = "Q89_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q91</h5>
+		<p>
+			<label><i>Feel that I'm unable to deal with things.</i></label></br>
+			<input type = "radio"
+				name = "90"
+				id = "Q90_0"
+				value = "0" />
+			<label for = "Q90_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "90"
+				id = "Q90_1"
+				value = "1" />
+			<label for = "Q90_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "90"
+				id = "Q90_2"
+				value = "2" />
+			<label for = "Q90_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "90"
+				id = "Q90_3"
+				value = "3" />
+			<label for = "Q90_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "90"
+				id = "Q90_4"
+				value = "4" />
+			<label for = "Q90_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q92</h5>
+		<p>
+			<label><i>Readily overcome setbacks.</i></label></br>
+			<input type = "radio"
+				name = "91"
+				id = "Q91_0"
+				value = "0" />
+			<label for = "Q91_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "91"
+				id = "Q91_1"
+				value = "1" />
+			<label for = "Q91_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "91"
+				id = "Q91_2"
+				value = "2" />
+			<label for = "Q91_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "91"
+				id = "Q91_3"
+				value = "3" />
+			<label for = "Q91_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "91"
+				id = "Q91_4"
+				value = "4" />
+			<label for = "Q91_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q93</h5>
+		<p>
+			<label><i>Have a good word for everyone.</i></label></br>
+			<input type = "radio"
+				name = "92"
+				id = "Q92_0"
+				value = "0" />
+			<label for = "Q92_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "92"
+				id = "Q92_1"
+				value = "1" />
+			<label for = "Q92_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "92"
+				id = "Q92_2"
+				value = "2" />
+			<label for = "Q92_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "92"
+				id = "Q92_3"
+				value = "3" />
+			<label for = "Q92_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "92"
+				id = "Q92_4"
+				value = "4" />
+			<label for = "Q92_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q94</h5>
+		<p>
+			<label><i>Believe that others have good intentions.</i></label></br>
+			<input type = "radio"
+				name = "93"
+				id = "Q93_0"
+				value = "0" />
+			<label for = "Q93_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "93"
+				id = "Q93_1"
+				value = "1" />
+			<label for = "Q93_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "93"
+				id = "Q93_2"
+				value = "2" />
+			<label for = "Q93_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "93"
+				id = "Q93_3"
+				value = "3" />
+			<label for = "Q93_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "93"
+				id = "Q93_4"
+				value = "4" />
+			<label for = "Q93_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q95</h5>
+		<p>
+			<label><i>Accept people as they are.</i></label></br>
+			<input type = "radio"
+				name = "94"
+				id = "Q94_0"
+				value = "0" />
+			<label for = "Q94_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "94"
+				id = "Q94_1"
+				value = "1" />
+			<label for = "Q94_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "94"
+				id = "Q94_2"
+				value = "2" />
+			<label for = "Q94_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "94"
+				id = "Q94_3"
+				value = "3" />
+			<label for = "Q94_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "94"
+				id = "Q94_4"
+				value = "4" />
+			<label for = "Q94_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q96</h5>
+		<p>
+			<label><i>Make people feel at ease.</i></label></br>
+			<input type = "radio"
+				name = "95"
+				id = "Q95_0"
+				value = "0" />
+			<label for = "Q95_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "95"
+				id = "Q95_1"
+				value = "1" />
+			<label for = "Q95_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "95"
+				id = "Q95_2"
+				value = "2" />
+			<label for = "Q95_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "95"
+				id = "Q95_3"
+				value = "3" />
+			<label for = "Q95_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "95"
+				id = "Q95_4"
+				value = "4" />
+			<label for = "Q95_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q97</h5>
+		<p>
+			<label><i>Hold a grudge.</i></label></br>
+			<input type = "radio"
+				name = "96"
+				id = "Q96_0"
+				value = "0" />
+			<label for = "Q96_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "96"
+				id = "Q96_1"
+				value = "1" />
+			<label for = "Q96_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "96"
+				id = "Q96_2"
+				value = "2" />
+			<label for = "Q96_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "96"
+				id = "Q96_3"
+				value = "3" />
+			<label for = "Q96_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "96"
+				id = "Q96_4"
+				value = "4" />
+			<label for = "Q96_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q98</h5>
+		<p>
+			<label><i>Am out for my own personal gain.</i></label></br>
+			<input type = "radio"
+				name = "97"
+				id = "Q97_0"
+				value = "0" />
+			<label for = "Q97_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "97"
+				id = "Q97_1"
+				value = "1" />
+			<label for = "Q97_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "97"
+				id = "Q97_2"
+				value = "2" />
+			<label for = "Q97_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "97"
+				id = "Q97_3"
+				value = "3" />
+			<label for = "Q97_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "97"
+				id = "Q97_4"
+				value = "4" />
+			<label for = "Q97_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q99</h5>
+		<p>
+			<label><i>Do crazy things.</i></label></br>
+			<input type = "radio"
+				name = "98"
+				id = "Q98_0"
+				value = "0" />
+			<label for = "Q98_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "98"
+				id = "Q98_1"
+				value = "1" />
+			<label for = "Q98_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "98"
+				id = "Q98_2"
+				value = "2" />
+			<label for = "Q98_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "98"
+				id = "Q98_3"
+				value = "3" />
+			<label for = "Q98_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "98"
+				id = "Q98_4"
+				value = "4" />
+			<label for = "Q98_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q100</h5>
+		<p>
+			<label><i>Have difficulty understanding abstract ideas.</i></label></br>
+			<input type = "radio"
+				name = "99"
+				id = "Q99_0"
+				value = "0" />
+			<label for = "Q99_0">Very inaccurate.</label></br>
+			<input type = "radio"
+				name = "99"
+				id = "Q99_1"
+				value = "1" />
+			<label for = "Q99_1">Moderately inaccurate.</label></br>
+			<input type = "radio"
+				name = "99"
+				id = "Q99_2"
+				value = "2" />
+			<label for = "Q99_2">Neither inaccurate nor accurate.</label></br>
+			<input type = "radio"
+				name = "99"
+				id = "Q99_3"
+				value = "3" />
+			<label for = "Q99_3">Moderately accurate.</label></br>
+			<input type = "radio"
+				name = "99"
+				id = "Q99_4"
+				value = "4" />
+			<label for = "Q99_4">Very accurate.</label></br>
+		</p>
+	</fieldset>
+
+	<fieldset>
+		<input type="submit" value="Submit" class="btn btn-primary" style="margin-left: 40%;"/>
+	</fieldset>
+	<fieldset hidden>
+		<input type="hidden" name="keys_string" id="keys" value="123451234512345543216789AA9876A9876GHIJKGHIJKGHIJKKJIHGKJIHGKJIHGKJIHGKJIHGBCDEFBCDEFBCDEFLMNOPPONMLPONMLLMNOPLMNOP6789AA9876A98761234554321543216789A6789ABCDEFBCDEFBCDEFFEDCBPONMLPONMLLMNOP1234512345123455432154321PONMLPONMLLMNOP6789A6789A6789A6789AA9876A9876A98766789A6789AA9876A9876A9876GHIJKGHIJKGHIJKKJIHGLMNOPLMNOPPONMLPONMLGHIJKGHIJKGHIJKGHIJKKJIHGGHIJKKJIHGBCDEFFEDCBFEDCBFEDCB12345123455432154321PONMLLMNOPLMNOP123451234554321BCDEFFEDCBFEDCBLMNOPPONMLBCDEFBCDEFBCDEFBCDEFFEDCBFEDCB54321KJIHG">
+	</fieldset>
+</form>
+</div>
+</div>
+</div>
+</br>

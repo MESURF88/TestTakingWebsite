@@ -5,6 +5,7 @@ module.exports = function(){
 //jt calculation
 function calculate_jt(body){
     return new Promise(function(resolve,reject) {
+        const NUM_OPTIONS = 4;
         var key = body.keys_string;
         var key_length = key.length; 
         var max = 0;
@@ -19,10 +20,10 @@ function calculate_jt(body){
         ans_idx = 0;
         question_num = 0;
         for (var i = 0; i < key_length; i++){
-            if (parseInt(body[ans_idx]) === (i - (question_num * 4))){
+            if (parseInt(body[ans_idx]) === (i - (question_num * NUM_OPTIONS))){
             arr[key[i]]++;
             }
-            if ((i + 1) % 4 == 0){
+            if ((i + 1) % NUM_OPTIONS == 0){
             question_num++;
             ans_idx++;
             }
