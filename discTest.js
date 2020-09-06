@@ -77,11 +77,23 @@ function calculate_disc(body){
             }
         }
 
-        //Determine disc based on additive scoring
-        var result_disc = 'D';
+        //Find maximum value of dictionary
+        var max = 0;
+        var prop_max = '';
+        for(var prop in quadrants) {
+            if(quadrants[prop] > max){
+                max = quadrants[prop];
+                prop_max = prop;
+            } 
+        }
 
- 
-        resolve(result_disc);
+        //Assign result based on additive scoring
+        var result_arr = [];
+        result_arr[0] = {};
+        result_arr[1] = {};
+        result_arr[0].result = prop_max;
+        result_arr[1] = JSON.stringify(quadrants).replace(/[\{\}"]+/g,''); 
+        resolve(result_arr);
     });
 }
 
@@ -98,7 +110,8 @@ function calculate_disc(body){
     //DISC results
     router.post('/:id', (req, res) => {
             calculate_disc(req.body).then(function(result_disc) {
-            req.session.result_disc = result_disc;
+            req.session.result_disc = result_disc[0].result;
+            req.session.details_disc = result_disc[1];
             req.session.display_check = '0';
             res.redirect('/results');
         }, function(error) {

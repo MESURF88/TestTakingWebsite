@@ -8,12 +8,12 @@ module.exports = function(){
 * -------------------------
 * I answer key:     |  0  |
 * E answer key:     |  1  |
-* E answer key:     |  2  |
-* E answer key:     |  3  |
-* E answer key:     |  4  |
-* E answer key:     |  5  |
-* E answer key:     |  6  |
-* E answer key:     |  7  |
+* S answer key:     |  2  |
+* N answer key:     |  3  |
+* T answer key:     |  4  |
+* F answer key:     |  5  |
+* J answer key:     |  6  |
+* P answer key:     |  7  |
 *
 */
 
@@ -46,6 +46,7 @@ function calculate_jt(body){
 
         //Determine jt based on additive scoring, preference given to more common
         var result_jt = '';
+        var score = '';
         var IE_total = arr[0] + arr[1];
         var SN_total = arr[2] + arr[3];
         var TF_total = arr[4] + arr[5];
@@ -60,29 +61,73 @@ function calculate_jt(body){
         var P_val = arr[7]/JP_total;
         if (E_val > I_val){
             result_jt += 'E';
+            score += 'E:';
+            if (!Number.isNaN(E_val)){
+                score += parseInt((E_val*100)).toString();
+            }
+            score += ','
         }
         else{
             result_jt += 'I';
+            score += 'I:';
+            if (!Number.isNaN(I_val)){
+                score += parseInt((I_val*100)).toString();
+            }
+            score += ','
         }
         if (N_val > S_val){
             result_jt += 'N';
+            score += 'N:';
+            if (!Number.isNaN(N_val)){
+                score += parseInt((INval*100)).toString();
+            }
+            score += ','
         }
         else{
             result_jt += 'S';
+            score += 'S:';
+            if (!Number.isNaN(S_val)){
+                score += parseInt((S_val*100)).toString();
+            }
+            score += ','
         }
         if (T_val > F_val){
             result_jt += 'T';
+            score += 'T:';
+            if (!Number.isNaN(T_val)){
+                score += parseInt((T_val*100)).toString();
+            }
+            score += ','
         }
         else{
             result_jt += 'F';
+            score += 'F:';
+            if (!Number.isNaN(F_val)){
+                score += parseInt((F_val*100)).toString();
+            }
+            score += ','
         }
         if (P_val > J_val){
             result_jt += 'P';
+            score += 'P:';
+            if (!Number.isNaN(P_val)){
+                score += parseInt((P_val*100)).toString();
+            }
         }
         else{
             result_jt += 'J';
+            score += 'J:';
+            if (!Number.isNaN(J_val)){
+                score += parseInt((J_val*100)).toString();
+            }
         }
-        resolve(result_jt);
+        var result_arr = [];
+        result_arr[0] = {};
+        result_arr[1] = {};
+        result_arr[0].result = result_jt;
+        console.log(score);
+        result_arr[1] = 'I:1,E:2'; 
+        resolve(result_arr);
     });
 }
 
@@ -99,7 +144,8 @@ function calculate_jt(body){
     //jt results
     router.post('/:id', (req, res) => {
             calculate_jt(req.body).then(function(result_jt) {
-            req.session.result_jt = result_jt;
+            req.session.result_jt = result_jt[0].result;
+            req.session.details_jt = result_jt[1];
             req.session.display_check = '0';
             res.redirect('/results');
         }, function(error) {

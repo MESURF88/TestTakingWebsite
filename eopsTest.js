@@ -31,13 +31,22 @@ function calculate_eops(body){
         const NUM_OPTIONS = 5;
         var key = body.keys_string;
         var key_length = key.length;
-        var eq_score = 0;
+        var eops_bins = {}
+        eops_bins['Reformer'] = 0;
+        eops_bins['Helper'] = 0;
+        eops_bins['Achiever'] = 0;
+        eops_bins['Individualist'] = 0;
+        eops_bins['Investigator'] = 0;
+        eops_bins['Loyalist'] = 0; 
+        eops_bins['Enthusiast'] = 0; 
+        eops_bins['Challenger'] = 0;
+        eops_bins['Peacemaker'] = 0;
         ans_idx = 0;
         question_num = 0;
-        //Assign additive scores to the total EoPS score
+        //Assign additive scores for the 9 EoPS bins
         for (var i = 0; i < key_length; i++){
             if (parseInt(body[ans_idx]) === (i - (question_num * NUM_OPTIONS))){
-                eq_score += ParseInt(key[i]);
+                eops_bins['Reformer'] += ParseInt(key[i]);
             }
             if ((i + 1) % NUM_OPTIONS == 0){
                 question_num++;

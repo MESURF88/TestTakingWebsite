@@ -103,7 +103,6 @@ function calculate_ipip(body){
                 prop_second = prop;
             } 
         }
-        console.log(dimensions);//TODO: remove
         //Determine ipip based on additive scoring
         var result_ipip = '';
         //Check if prop_second and prop_first are empty 
@@ -171,8 +170,13 @@ function calculate_ipip(body){
             }
             
         }
- 
-        resolve(result_ipip);
+        
+        var result_arr = [];
+        result_arr[0] = {};
+        result_arr[1] = {};
+        result_arr[0].result = result_ipip;
+        result_arr[1] = JSON.stringify(dimensions).replace(/[\{\}"]+/g,''); 
+        resolve(result_arr);
     });
 }
 
@@ -189,7 +193,8 @@ function calculate_ipip(body){
     //IPIP results
     router.post('/:id', (req, res) => {
             calculate_ipip(req.body).then(function(result_ipip) {
-            req.session.result_ipip = result_ipip;
+            req.session.result_ipip = result_ipip[0].result;
+            req.session.details_ipip = result_ipip[1];
             req.session.display_check = '0';
             res.redirect('/results');
         }, function(error) {

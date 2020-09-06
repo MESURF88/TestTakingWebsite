@@ -35,7 +35,7 @@
     </br>
 {{/if}}
 
-<div class="center">
+<div class="center_details">
     <table class="table-condensed" style="width:345px;">
         <tbody> 
             <tr> 
@@ -43,6 +43,9 @@
                 {{#if ipipResult.result}}
                     <td><button id="ipipButton" style="float:right;" onclick="ipipInfo()" class="btn btn-info">more info</button></td>
                 {{/if}}
+            </tr>
+            <tr>
+                <td><p class="results_list">score: {{ipipResult.details}}</p></td>
             </tr> 
         </tbody>
     </table>   
@@ -50,7 +53,7 @@
 <div class="center_info">
         <div id="ipipDesc" style="display:none">{{lookup_prop ipipResult.result ipipResult.result_info}}</div>
 </div>
-<div class="center">
+<div class="center_details">
     <table class="table-condensed" style="width:345px;">
         <tbody> 
             <tr> 
@@ -58,6 +61,9 @@
                 {{#if jtResult.result}}
                     <td><button id="jtButton" style="float:right;" onclick="jtInfo()" class="btn btn-info">more info</button></td>
                 {{/if}}
+            </tr>
+            <tr>
+                <td><p class="results_list">score: {{jtResult.details}}</p></td>
             </tr> 
         </tbody>
     </table>   
@@ -65,7 +71,7 @@
 <div class="center_info">
         <div id="jtDesc" style="display:none">{{lookup_prop jtResult.result jtResult.result_info}}</div>
 </div>
-<div class="center">
+<div class="center_details">
     <table class="table-condensed" style="width:345px;">
         <tbody> 
             <tr> 
@@ -73,14 +79,17 @@
                 {{#if discResult.result}}
                     <td><button id="discButton" style="float:right;" onclick="discInfo()" class="btn btn-info">more info</button></td>
                 {{/if}}
-            </tr> 
+            </tr>
+            <tr>
+                <td><p class="results_list">score: {{discResult.details}}</p></td>
+            </tr>  
         </tbody>
     </table>   
 </div>
 <div class="center_info">
         <div id="discDesc" style="display:none">{{lookup_prop discResult.result discResult.result_info}}</div>
 </div>
-<div class="center">
+<div class="center_details">
     <table class="table-condensed" style="width:345px;">
         <tbody> 
             <tr> 
@@ -88,14 +97,17 @@
                 {{#if fpqResult.result}}
                     <td><button id="fpqButton" style="float:right;" onclick="fpqInfo()" class="btn btn-info">more info</button></td>
                 {{/if}}
-            </tr> 
+            </tr>
+            <tr>
+                <td><p class="results_list">score: {{fpqResult.details}}</p></td>
+            </tr>   
         </tbody>
     </table>   
 </div>
 <div class="center_info">
         <div id="fpqDesc" style="display:none">{{lookup_prop fpqResult.result fpqResult.result_info}}</div>
 </div>
-<div class="center">
+<div class="center_details">
     <table class="table-condensed" style="width:345px;">
         <tbody> 
             <tr> 
@@ -103,7 +115,10 @@
                 {{#if eqResult.result}}
                     <td><button id="eqButton" style="float:right;" onclick="eqInfo()" class="btn btn-info">more info</button></td>
                 {{/if}}
-            </tr> 
+            </tr>
+            <tr>
+                <td><p class="results_list">score: {{eqResult.details}}</p></td>
+            </tr>   
         </tbody>
     </table>   
 </div>

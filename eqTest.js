@@ -34,9 +34,22 @@ function calculate_eq(body){
 
         //Determine EQ based on additive scoring
         var result_eq = 'Mid-eq';
+        if (eq_score < 105){
+            var result_eq = 'Low-eq';
+        }
+        else if (eq_score > 104 && eq_score < 135){
+            var result_eq = 'Mid-eq';
+        }
+        else{
+            var result_eq = 'High-eq';
+        }
 
- 
-        resolve(result_eq);
+        var result_arr = [];
+        result_arr[0] = {};
+        result_arr[1] = {};
+        result_arr[0].result = result_eq;
+        result_arr[1] = eq_score.toString();
+        resolve(result_arr);
     });
 }
 
@@ -53,7 +66,8 @@ function calculate_eq(body){
     //EQ results
     router.post('/:id', (req, res) => {
             calculate_eq(req.body).then(function(result_eq) {
-            req.session.result_eq = result_eq;
+            req.session.result_eq = result_eq[0].result;
+            req.session.details_eq = result_eq[1];
             req.session.display_check = '0';
             res.redirect('/results');
         }, function(error) {

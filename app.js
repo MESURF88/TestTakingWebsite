@@ -78,18 +78,23 @@ router.get('/results', (req, res) => {
 
         if(req.session.result_ipip != undefined){
           context.ipipResult.result = req.session.result_ipip.toString();
+          context.ipipResult.details = req.session.details_ipip;
         }
         if(req.session.result_jt != undefined){
           context.jtResult.result = req.session.result_jt.toString();
+          context.jtResult.details = req.session.details_jt;
         }
         if(req.session.result_disc != undefined){
           context.discResult.result = req.session.result_disc.toString();
+          context.discResult.details = req.session.details_disc;
         }
         if(req.session.result_fpq != undefined){
           context.fpqResult.result = req.session.result_fpq.toString();
+          context.fpqResult.details = req.session.details_fpq;
         }
         if(req.session.result_eq != undefined){
           context.eqResult.result = req.session.result_eq.toString();
+          context.eqResult.details = req.session.details_eq;
         }
         if(req.session.result_eops != undefined){
           context.eopsResult.result = req.session.result_eops.toString();
@@ -160,19 +165,24 @@ router.get('/results', (req, res) => {
       //intialize placeholder context if failed read
       var context = {
           "ipipResult" : {
-              "result": ""
+              "result": "",
+              "details": ""
         },
           "jtResult" :  {
-            "result": ""
+            "result": "",
+            "details": ""
         },
           "discResult" :  {
-            "result": ""
+            "result": "",
+            "details": ""
         },
           "fpqResult" :  {
-            "result": ""
+            "result": "",
+            "details": ""
         },
           "eqResult" :  {
-            "result": ""
+            "result": "",
+            "details": ""
         },
           "eopsResult" :  {
             "result": ""

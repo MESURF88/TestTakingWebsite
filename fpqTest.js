@@ -77,11 +77,25 @@ function calculate_fpq(body){
             }
         }
 
-        //Determine FPQ based on additive scoring
-        var result_fpq = 'Explorer';
+        //Find maximum value of dictionary
+        var max = 0;
+        var prop_max = '';
+        for(var prop in temperaments) {
+            if(quadrants[prop] > max){
+                max = quadrants[prop];
+                prop_max = prop;
+            } 
+        }
 
- 
-        resolve(result_fpq);
+        //Assign result based on additive scoring
+        var score_details = '';
+        var result_arr = [];
+        result_arr[0] = {};
+        result_arr[1] = {};
+        result_arr[0].result = prop_max;
+        score_details = JSON.stringify(temperaments).replace(/[\{\}"]+/g,''); 
+        result_arr[1] = score_details.replace(/[Explorer]+/g,'E').replace(/[Builder]+/g,'B').replace(/[Director]+/g,'D').replace(/[Negotiator]+/g,'N');
+        resolve(result_arr);
     });
 }
 
@@ -98,7 +112,8 @@ function calculate_fpq(body){
     //FPQ results
     router.post('/:id', (req, res) => {
             calculate_fpq(req.body).then(function(result_fpq) {
-            req.session.result_fpq = result_fpq;
+            req.session.result_fpq = result_fpq[0].result;
+            req.session.details_fpq = result_fpq[1];
             req.session.display_check = '0';
             res.redirect('/results');
         }, function(error) {

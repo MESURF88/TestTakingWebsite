@@ -1,6 +1,7 @@
 {
     "ipipResult" : {
         "result": "",
+        "details": "",
         "result_info": {
             "High-C": "Concientiousness dominates by a large margin, which means a tendency to act dutifully, and strive for achievement even against measures or outside expectations. If this dimension dominates it means very strong control of impulses and a predisposition to intense planning and industriousness. Low conscientiousness is associated with spontaniety and impulsiveness. High conscientiousness can be seen as stubborn or headstrong.",
             "High-E": "Extraversion dominates by a large margin, which means a tendency to pursue external stimuli, and be energized by social environments. If this dimension dominates it manifests as energy, talkativeness and assertiveness. High extraversion can be seen as boisterious and uninhibited. Low extraversion is an individual with more reserved, withdrawn characteristics.",
@@ -21,6 +22,7 @@
     },
     "jtResult": {
         "result": "",
+        "details": "",
         "result_info": {
             "ISFJ": "Conscious and altruistic. Usually protective and down to earth, the ISFJ has a strong grasp of relationships and how to strengthen them. At their best, they are a model citizen and rally behind causes that align with their morality and beliefs. The ISFJ can be judgemental and condemn actions and behaviors that are percieved as immoral. The ISFJ has strong foundation and is not easily swayed from their morals.",
             "ESFJ": "Emotionally acute and engaging. Typically empathetic and inclusive, the ESFJ has penchant for social interaction and creating harmony. At their best, they are adept at understanding people and their emotional needs. The ESFJ cares for others and can sometimes neglect their own needs. The ESFJ strives for perfection and fellowship in their life.",
@@ -42,6 +44,7 @@
     },
     "discResult" :  {
         "result": "",
+        "details": "",
         "result_info": {
             "D": "Dominance is defined as a person who is competitve, results-oriented, very decisive and adept at solving problems. However, fears being taken advantage of or appearing weak. In conflict, speaks up about problems and settles the score.",
             "I": "Influence is defined as person who is persuasive, charismatic, ethusiastic and has good interpersonal skills. However, fears rejection or being ignored. In conflict, has tendency to display unfiltered emotion.",
@@ -51,6 +54,7 @@
     },
     "fpqResult" :  {
         "result": "",
+        "details": "",
         "result_info": {
             "Explorer": "Explorers are Curious/Energetic. They are highly curious, seek new experiences and enjoy novelty. Explorers prefer to live in the moment. They typically have a lot of energy which motivates them to try new things. The associated brain chemicals are dopamine, norepinephrine. ",
             "Builder": "Builders are Cautious/Social Norm Compliant. They are very precise and value routines and consistency. Builders are typically grounded and fact-based. They prefer to focus on tasks and do them right the first time. The associated brain chemicals are serotonin.",
@@ -60,6 +64,7 @@
     },
     "eqResult" :  {
         "result": "",
+        "details": "",
         "result_info": {
             "High-eq": "A high EQ means high receptibility to emotional information, this serves to guide thinking and behavior. High EQ is thought to be the enhanced ability to recognize the emotions in others and leadership skills. A shortcoming is that high EQ correlates to lower creativity and risk-taking.",
             "Mid-eq": "An average EQ means being adept at picking up emotions and reading a room. However, not to the extent of an individual with high EQ. Overall, it signifies a normal capacity to handle emotional information.",
