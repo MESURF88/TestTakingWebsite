@@ -1,6 +1,18 @@
 module.exports = function(){
     var express = require('express');
     var router = express.Router();
+/*
+
+*                         variable: keys_string
+* additive value:   |  1  |  2  |  3  |  4  |  5  |
+* -------------------------------------------------
+* C answer key:     |  1  |  2  |  3  |  4  |  5  |
+* E answer key:     |  6  |  7  |  8  |  9  |  A  |
+* A answer key:     |  B  |  C  |  D  |  E  |  F  |
+* I answer key:     |  G  |  H  |  I  |  J  |  K  |
+* S answer key:     |  L  |  M  |  N  |  O  |  P  |
+*
+*/
 
 //IPIP calculation
 function calculate_ipip(body){
@@ -101,10 +113,10 @@ function calculate_ipip(body){
             result_ipip = 'High-C';
         }
         else{
-            //Find margin between first and second dimension within 33% of answered questions
-            var margin = Math.floor(questions_answered * 0.33);
+            //Find margin between first and second dimension within 20% of answered questions
+            var margin = Math.floor(questions_answered * 0.20);
             //Check if two dimensions, if first and second dimension within margin or if prop_second is empty
-            if (((max_first-max_second) > margin) || (prop_second === '')){
+            if (((max_first-max_second) >= margin) || (prop_second === '')){
                 //One dimension dominates
                 switch (prop_first) {
                     case 'C':

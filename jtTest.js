@@ -2,6 +2,21 @@ module.exports = function(){
     var express = require('express');
     var router = express.Router();
 
+/*
+*   variable: key_string
+* additive value:   |  1  | 
+* -------------------------
+* I answer key:     |  0  |
+* E answer key:     |  1  |
+* E answer key:     |  2  |
+* E answer key:     |  3  |
+* E answer key:     |  4  |
+* E answer key:     |  5  |
+* E answer key:     |  6  |
+* E answer key:     |  7  |
+*
+*/
+
 //jt calculation
 function calculate_jt(body){
     return new Promise(function(resolve,reject) {
