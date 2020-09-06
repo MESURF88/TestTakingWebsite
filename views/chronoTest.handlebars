@@ -1,0 +1,98 @@
+<head>
+<h1 style="text-align: center"><b>chrono</b></h1>
+	<style>
+		body{
+			font-family: 'Roboto', sans-serif;
+			background: #808080;
+			background: -webkit-linear-gradient(to bottom, #CBCBCB,#403bbacb,#2b2b2c);
+			background: linear-gradient(to bottom, #CBCBCB,#403bbacb,#2c2b2b);
+			min-height: 100vh;
+			width: 100vw;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="row justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-xs-center">
+<div class="col-lg-auto col-md-auto col-sm-auto col-xs-auto">
+<form id="test_spiritTest" action="/chronoTest/{{id}}" method="post">
+	<fieldset>
+	<p>Number of questions: 2</p>
+	<p>It seems that the CIRENS can be used if acknowledged.</p> 
+	<p>Credit to the authors and their research paper (Ottoni et al., 2011).</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q1</h5>
+		<p>
+			<label><i>In general, how is your energy level in the morning?</i></label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_0"
+				value = "0" />
+			<label for = "Q0_0">Very Low.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_1"
+				value = "1" />
+			<label for = "Q0_1">Low.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_2"
+				value = "2" />
+			<label for = "Q0_2">Moderate.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_3"
+				value = "3" />
+			<label for = "Q0_3">High.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_4"
+				value = "4" />
+			<label for = "Q0_4">Very High.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q2</h5>
+		<p>
+			<label><i>In general, how is your energy level in the evening?</i></label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_0"
+				value = "0" />
+			<label for = "Q1_0">Very Low.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_1"
+				value = "1" />
+			<label for = "Q1_1">Low.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_2"
+				value = "2" />
+			<label for = "Q1_2">Moderate.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_3"
+				value = "3" />
+			<label for = "Q1_3">High.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_4"
+				value = "4" />
+			<label for = "Q1_4">Very High.</label></br>
+		</p>
+	</fieldset>
+
+	<fieldset>
+		<input type="submit" value="Submit" class="btn btn-primary" style="margin-left: 40%;"/>
+	</fieldset>
+	<fieldset hidden>
+		<input type="hidden" name="keys_string" id="keys" value="EDCBAABCDE">
+	</fieldset>
+</form>
+</div>
+</div>
+</div>
+</br>

@@ -2,7 +2,6 @@ module.exports = function(){
     var express = require('express');
     var router = express.Router();
 /*
-
 *                         variable: keys_string
 * additive value:   |  1  |  2  |  3  |  4  |  5  |
 * -------------------------------------------------
@@ -56,7 +55,7 @@ function calculate_ipip(body){
         dimensions['S'] = 0;
         ans_idx = 0;
         question_num = 0;
-        //Assign additiv scores to each of the 5 dimensions
+        //Assign additive scores to each of the 5 dimensions
         for (var i = 0; i < key_length; i++){
             if (parseInt(body[ans_idx]) === (i - (question_num * NUM_OPTIONS))){
                 var char_val = key[i].charCodeAt();
@@ -105,7 +104,7 @@ function calculate_ipip(body){
             } 
         }
         console.log(dimensions);//TODO: remove
-        //Determine ipip based on additice scoring
+        //Determine ipip based on additive scoring
         var result_ipip = '';
         //Check if prop_second and prop_first are empty 
         if ((prop_first === '') && (prop_second === '')){
