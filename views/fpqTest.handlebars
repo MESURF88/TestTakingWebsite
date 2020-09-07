@@ -4,8 +4,8 @@
 		body{
 			font-family: 'Roboto', sans-serif;
 			background: #808080;
-			background: -webkit-linear-gradient(to bottom, #CBCBCB,#403bbacb,#2b2b2c);
-			background: linear-gradient(to bottom, #CBCBCB,#403bbacb,#2c2b2b);
+			background: -webkit-linear-gradient(to bottom, #CBCBCB,#38b583cb,#585856);
+			background: linear-gradient(to bottom, #CBCBCB,#38b583cb,#585856);
 			min-height: 100vh;
 			width: 100vw;
 			margin: 0;
@@ -16,9 +16,1579 @@
 <div class="container">
 <div class="row justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-xs-center">
 <div class="col-lg-auto col-md-auto col-sm-auto col-xs-auto">
-<form id="test_spiritTest" action="/chronoTest/{{id}}" method="post">
+<form id="test_fpqTest" action="/fpqTest/{{id}}" method="post">
+<fieldset>
+	<h5>Legal Stuff</h5>
+	<p>Credit to the scale, Fisher Temperament Inventory.</p>
+	<p>(Brown et al., 2013)</p>
+	<p>Number of questions: 60</p>
+</fieldset>
 	<fieldset>
-	<p>Number of questions: 62</p>
+		<h5>Q1</h5>
+		<p>
+			<label><i>I find unpredictable situations exhilarating.</i></label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_0"
+				value = "0" />
+			<label for = "Q0_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_1"
+				value = "1" />
+			<label for = "Q0_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_2"
+				value = "2" />
+			<label for = "Q0_2">Agree.</label></br>
+			<input type = "radio"
+				name = "0"
+				id = "Q0_3"
+				value = "3" />
+			<label for = "Q0_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q2</h5>
+		<p>
+			<label><i>Debating is a good way to match my wits with others.</i></label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_0"
+				value = "0" />
+			<label for = "Q1_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_1"
+				value = "1" />
+			<label for = "Q1_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_2"
+				value = "2" />
+			<label for = "Q1_2">Agree.</label></br>
+			<input type = "radio"
+				name = "1"
+				id = "Q1_3"
+				value = "3" />
+			<label for = "Q1_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q3</h5>
+		<p>
+			<label><i>I do things on the spur of the moment.</i></label></br>
+			<input type = "radio"
+				name = "2"
+				id = "Q2_0"
+				value = "0" />
+			<label for = "Q2_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "2"
+				id = "Q2_1"
+				value = "1" />
+			<label for = "Q2_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "2"
+				id = "Q2_2"
+				value = "2" />
+			<label for = "Q2_2">Agree.</label></br>
+			<input type = "radio"
+				name = "2"
+				id = "Q2_3"
+				value = "3" />
+			<label for = "Q2_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q4</h5>
+		<p>
+			<label><i>People should behave in ways that are morally correct.</i></label></br>
+			<input type = "radio"
+				name = "3"
+				id = "Q3_0"
+				value = "0" />
+			<label for = "Q3_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "3"
+				id = "Q3_1"
+				value = "1" />
+			<label for = "Q3_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "3"
+				id = "Q3_2"
+				value = "2" />
+			<label for = "Q3_2">Agree.</label></br>
+			<input type = "radio"
+				name = "3"
+				id = "Q3_3"
+				value = "3" />
+			<label for = "Q3_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q5</h5>
+		<p>
+			<label><i>I am able to solve problems without letting emotion get in the way.</i></label></br>
+			<input type = "radio"
+				name = "4"
+				id = "Q4_0"
+				value = "0" />
+			<label for = "Q4_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "4"
+				id = "Q4_1"
+				value = "1" />
+			<label for = "Q4_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "4"
+				id = "Q4_2"
+				value = "2" />
+			<label for = "Q4_2">Agree.</label></br>
+			<input type = "radio"
+				name = "4"
+				id = "Q4_3"
+				value = "3" />
+			<label for = "Q4_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q6</h5>
+		<p>
+			<label><i>I get bored when I have to do the same familiar things.</i></label></br>
+			<input type = "radio"
+				name = "5"
+				id = "Q5_0"
+				value = "0" />
+			<label for = "Q5_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "5"
+				id = "Q5_1"
+				value = "1" />
+			<label for = "Q5_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "5"
+				id = "Q5_2"
+				value = "2" />
+			<label for = "Q5_2">Agree.</label></br>
+			<input type = "radio"
+				name = "5"
+				id = "Q5_3"
+				value = "3" />
+			<label for = "Q5_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q7</h5>
+		<p>
+			<label><i>I feel emotions more deeply than most people.</i></label></br>
+			<input type = "radio"
+				name = "6"
+				id = "Q6_0"
+				value = "0" />
+			<label for = "Q6_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "6"
+				id = "Q6_1"
+				value = "1" />
+			<label for = "Q6_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "6"
+				id = "Q6_2"
+				value = "2" />
+			<label for = "Q6_2">Agree.</label></br>
+			<input type = "radio"
+				name = "6"
+				id = "Q6_3"
+				value = "3" />
+			<label for = "Q6_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q8</h5>
+		<p>
+			<label><i>I have a very wide range of interests.</i></label></br>
+			<input type = "radio"
+				name = "7"
+				id = "Q7_0"
+				value = "0" />
+			<label for = "Q7_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "7"
+				id = "Q7_1"
+				value = "1" />
+			<label for = "Q7_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "7"
+				id = "Q7_2"
+				value = "2" />
+			<label for = "Q7_2">Agree.</label></br>
+			<input type = "radio"
+				name = "7"
+				id = "Q7_3"
+				value = "3" />
+			<label for = "Q7_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q9</h5>
+		<p>
+			<label><i>I am very empathetic.</i></label></br>
+			<input type = "radio"
+				name = "8"
+				id = "Q8_0"
+				value = "0" />
+			<label for = "Q8_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "8"
+				id = "Q8_1"
+				value = "1" />
+			<label for = "Q8_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "8"
+				id = "Q8_2"
+				value = "2" />
+			<label for = "Q8_2">Agree.</label></br>
+			<input type = "radio"
+				name = "8"
+				id = "Q8_3"
+				value = "3" />
+			<label for = "Q8_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q10</h5>
+		<p>
+			<label><i>People should behave according to established standards of proper conduct.</i></label></br>
+			<input type = "radio"
+				name = "9"
+				id = "Q9_0"
+				value = "0" />
+			<label for = "Q9_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "9"
+				id = "Q9_1"
+				value = "1" />
+			<label for = "Q9_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "9"
+				id = "Q9_2"
+				value = "2" />
+			<label for = "Q9_2">Agree.</label></br>
+			<input type = "radio"
+				name = "9"
+				id = "Q9_3"
+				value = "3" />
+			<label for = "Q9_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q11</h5>
+		<p>
+			<label><i>I have more energy than most people.</i></label></br>
+			<input type = "radio"
+				name = "10"
+				id = "Q10_0"
+				value = "0" />
+			<label for = "Q10_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "10"
+				id = "Q10_1"
+				value = "1" />
+			<label for = "Q10_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "10"
+				id = "Q10_2"
+				value = "2" />
+			<label for = "Q10_2">Agree.</label></br>
+			<input type = "radio"
+				name = "10"
+				id = "Q10_3"
+				value = "3" />
+			<label for = "Q10_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q12</h5>
+		<p>
+			<label><i>I enjoy planning way ahead.</i></label></br>
+			<input type = "radio"
+				name = "11"
+				id = "Q11_0"
+				value = "0" />
+			<label for = "Q11_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "11"
+				id = "Q11_1"
+				value = "1" />
+			<label for = "Q11_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "11"
+				id = "Q11_2"
+				value = "2" />
+			<label for = "Q11_2">Agree.</label></br>
+			<input type = "radio"
+				name = "11"
+				id = "Q11_3"
+				value = "3" />
+			<label for = "Q11_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q13</h5>
+		<p>
+			<label><i>I frequently catch myself daydreaming.</i></label></br>
+			<input type = "radio"
+				name = "12"
+				id = "Q12_0"
+				value = "0" />
+			<label for = "Q12_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "12"
+				id = "Q12_1"
+				value = "1" />
+			<label for = "Q12_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "12"
+				id = "Q12_2"
+				value = "2" />
+			<label for = "Q12_2">Agree.</label></br>
+			<input type = "radio"
+				name = "12"
+				id = "Q12_3"
+				value = "3" />
+			<label for = "Q12_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q14</h5>
+		<p>
+			<label><i>I like to work in a straightforward path toward completing the task.</i></label></br>
+			<input type = "radio"
+				name = "13"
+				id = "Q13_0"
+				value = "0" />
+			<label for = "Q13_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "13"
+				id = "Q13_1"
+				value = "1" />
+			<label for = "Q13_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "13"
+				id = "Q13_2"
+				value = "2" />
+			<label for = "Q13_2">Agree.</label></br>
+			<input type = "radio"
+				name = "13"
+				id = "Q13_3"
+				value = "3" />
+			<label for = "Q13_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q15</h5>
+		<p>
+			<label><i>I understand complex machines easily.</i></label></br>
+			<input type = "radio"
+				name = "14"
+				id = "Q14_0"
+				value = "0" />
+			<label for = "Q14_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "14"
+				id = "Q14_1"
+				value = "1" />
+			<label for = "Q14_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "14"
+				id = "Q14_2"
+				value = "2" />
+			<label for = "Q14_2">Agree.</label></br>
+			<input type = "radio"
+				name = "14"
+				id = "Q14_3"
+				value = "3" />
+			<label for = "Q14_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q16</h5>
+		<p>
+			<label><i>I am more optimistic than most people.</i></label></br>
+			<input type = "radio"
+				name = "15"
+				id = "Q15_0"
+				value = "0" />
+			<label for = "Q15_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "15"
+				id = "Q15_1"
+				value = "1" />
+			<label for = "Q15_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "15"
+				id = "Q15_2"
+				value = "2" />
+			<label for = "Q15_2">Agree.</label></br>
+			<input type = "radio"
+				name = "15"
+				id = "Q15_3"
+				value = "3" />
+			<label for = "Q15_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q17</h5>
+		<p>
+			<label><i>I have a vivid imagination.</i></label></br>
+			<input type = "radio"
+				name = "16"
+				id = "Q16_0"
+				value = "0" />
+			<label for = "Q16_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "16"
+				id = "Q16_1"
+				value = "1" />
+			<label for = "Q16_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "16"
+				id = "Q16_2"
+				value = "2" />
+			<label for = "Q16_2">Agree.</label></br>
+			<input type = "radio"
+				name = "16"
+				id = "Q16_3"
+				value = "3" />
+			<label for = "Q16_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q18</h5>
+		<p>
+			<label><i>I am more creative than most people.</i></label></br>
+			<input type = "radio"
+				name = "17"
+				id = "Q17_0"
+				value = "0" />
+			<label for = "Q17_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "17"
+				id = "Q17_1"
+				value = "1" />
+			<label for = "Q17_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "17"
+				id = "Q17_2"
+				value = "2" />
+			<label for = "Q17_2">Agree.</label></br>
+			<input type = "radio"
+				name = "17"
+				id = "Q17_3"
+				value = "3" />
+			<label for = "Q17_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q19</h5>
+		<p>
+			<label><i>I think consistent routines keep life orderly and relaxing.</i></label></br>
+			<input type = "radio"
+				name = "18"
+				id = "Q18_0"
+				value = "0" />
+			<label for = "Q18_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "18"
+				id = "Q18_1"
+				value = "1" />
+			<label for = "Q18_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "18"
+				id = "Q18_2"
+				value = "2" />
+			<label for = "Q18_2">Agree.</label></br>
+			<input type = "radio"
+				name = "18"
+				id = "Q18_3"
+				value = "3" />
+			<label for = "Q18_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q20</h5>
+		<p>
+			<label><i>When making a decision, I like to stick to the facts rather than be swayed by people’s feelings.</i></label></br>
+			<input type = "radio"
+				name = "19"
+				id = "Q19_0"
+				value = "0" />
+			<label for = "Q19_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "19"
+				id = "Q19_1"
+				value = "1" />
+			<label for = "Q19_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "19"
+				id = "Q19_2"
+				value = "2" />
+			<label for = "Q19_2">Agree.</label></br>
+			<input type = "radio"
+				name = "19"
+				id = "Q19_3"
+				value = "3" />
+			<label for = "Q19_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q21</h5>
+		<p>
+			<label><i>I like to get to know my friends’ deepest needs and feelings.</i></label></br>
+			<input type = "radio"
+				name = "20"
+				id = "Q20_0"
+				value = "0" />
+			<label for = "Q20_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "20"
+				id = "Q20_1"
+				value = "1" />
+			<label for = "Q20_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "20"
+				id = "Q20_2"
+				value = "2" />
+			<label for = "Q20_2">Agree.</label></br>
+			<input type = "radio"
+				name = "20"
+				id = "Q20_3"
+				value = "3" />
+			<label for = "Q20_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q22</h5>
+		<p>
+			<label><i>Long established customs need to be respected and preserved.</i></label></br>
+			<input type = "radio"
+				name = "21"
+				id = "Q21_0"
+				value = "0" />
+			<label for = "Q21_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "21"
+				id = "Q21_1"
+				value = "1" />
+			<label for = "Q21_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "21"
+				id = "Q21_2"
+				value = "2" />
+			<label for = "Q21_2">Agree.</label></br>
+			<input type = "radio"
+				name = "21"
+				id = "Q21_3"
+				value = "3" />
+			<label for = "Q21_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q23</h5>
+		<p>
+			<label><i>I enjoy competitive conversations.</i></label></br>
+			<input type = "radio"
+				name = "22"
+				id = "Q22_0"
+				value = "0" />
+			<label for = "Q22_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "22"
+				id = "Q22_1"
+				value = "1" />
+			<label for = "Q22_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "22"
+				id = "Q22_2"
+				value = "2" />
+			<label for = "Q22_2">Agree.</label></br>
+			<input type = "radio"
+				name = "22"
+				id = "Q22_3"
+				value = "3" />
+			<label for = "Q22_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q24</h5>
+		<p>
+			<label><i>In general, I think it is important to follow rules.</i></label></br>
+			<input type = "radio"
+				name = "23"
+				id = "Q23_0"
+				value = "0" />
+			<label for = "Q23_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "23"
+				id = "Q23_1"
+				value = "1" />
+			<label for = "Q23_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "23"
+				id = "Q23_2"
+				value = "2" />
+			<label for = "Q23_2">Agree.</label></br>
+			<input type = "radio"
+				name = "23"
+				id = "Q23_3"
+				value = "3" />
+			<label for = "Q23_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q25</h5>
+		<p>
+			<label><i>I consider (and reconsider) every option thoroughly before making a plan.</i></label></br>
+			<input type = "radio"
+				name = "24"
+				id = "Q24_0"
+				value = "0" />
+			<label for = "Q24_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "24"
+				id = "Q24_1"
+				value = "1" />
+			<label for = "Q24_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "24"
+				id = "Q24_2"
+				value = "2" />
+			<label for = "Q24_2">Agree.</label></br>
+			<input type = "radio"
+				name = "24"
+				id = "Q24_3"
+				value = "3" />
+			<label for = "Q24_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q26</h5>
+		<p>
+			<label><i>On my time off, I like to be free to do whatever looks fun.</i></label></br>
+			<input type = "radio"
+				name = "25"
+				id = "Q25_0"
+				value = "0" />
+			<label for = "Q25_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "25"
+				id = "Q25_1"
+				value = "1" />
+			<label for = "Q25_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "25"
+				id = "Q25_2"
+				value = "2" />
+			<label for = "Q25_2">Agree.</label></br>
+			<input type = "radio"
+				name = "25"
+				id = "Q25_3"
+				value = "3" />
+			<label for = "Q25_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q27</h5>
+		<p>
+			<label><i>I am intrigued by rules and patterns that govern systems.</i></label></br>
+			<input type = "radio"
+				name = "26"
+				id = "Q26_0"
+				value = "0" />
+			<label for = "Q26_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "26"
+				id = "Q26_1"
+				value = "1" />
+			<label for = "Q26_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "26"
+				id = "Q26_2"
+				value = "2" />
+			<label for = "Q26_2">Agree.</label></br>
+			<input type = "radio"
+				name = "26"
+				id = "Q26_3"
+				value = "3" />
+			<label for = "Q26_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q28</h5>
+		<p>
+			<label><i>I would rather have loyal friends than interesting friends.</i></label></br>
+			<input type = "radio"
+				name = "27"
+				id = "Q27_0"
+				value = "0" />
+			<label for = "Q27_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "27"
+				id = "Q27_1"
+				value = "1" />
+			<label for = "Q27_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "27"
+				id = "Q27_2"
+				value = "2" />
+			<label for = "Q27_2">Agree.</label></br>
+			<input type = "radio"
+				name = "27"
+				id = "Q27_3"
+				value = "3" />
+			<label for = "Q27_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q29</h5>
+		<p>
+			<label><i>I think it is important to be direct.</i></label></br>
+			<input type = "radio"
+				name = "28"
+				id = "Q28_0"
+				value = "0" />
+			<label for = "Q28_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "28"
+				id = "Q28_1"
+				value = "1" />
+			<label for = "Q28_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "28"
+				id = "Q28_2"
+				value = "2" />
+			<label for = "Q28_2">Agree.</label></br>
+			<input type = "radio"
+				name = "28"
+				id = "Q28_3"
+				value = "3" />
+			<label for = "Q28_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q30</h5>
+		<p>
+			<label><i>I highly value deep emotional intimacy in my relationships.</i></label></br>
+			<input type = "radio"
+				name = "29"
+				id = "Q29_0"
+				value = "0" />
+			<label for = "Q29_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "29"
+				id = "Q29_1"
+				value = "1" />
+			<label for = "Q29_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "29"
+				id = "Q29_2"
+				value = "2" />
+			<label for = "Q29_2">Agree.</label></br>
+			<input type = "radio"
+				name = "29"
+				id = "Q29_3"
+				value = "3" />
+			<label for = "Q29_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q31</h5>
+		<p>
+			<label><i>I have no trouble making a choice, even when several alternatives seem equally good at first.</i></label></br>
+			<input type = "radio"
+				name = "30"
+				id = "Q30_0"
+				value = "0" />
+			<label for = "Q30_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "30"
+				id = "Q30_1"
+				value = "1" />
+			<label for = "Q30_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "30"
+				id = "Q30_2"
+				value = "2" />
+			<label for = "Q30_2">Agree.</label></br>
+			<input type = "radio"
+				name = "30"
+				id = "Q30_3"
+				value = "3" />
+			<label for = "Q30_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q32</h5>
+		<p>
+			<label><i>I am always looking for new experiences.</i></label></br>
+			<input type = "radio"
+				name = "31"
+				id = "Q31_0"
+				value = "0" />
+			<label for = "Q31_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "31"
+				id = "Q31_1"
+				value = "1" />
+			<label for = "Q31_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "31"
+				id = "Q31_2"
+				value = "2" />
+			<label for = "Q31_2">Agree.</label></br>
+			<input type = "radio"
+				name = "31"
+				id = "Q31_3"
+				value = "3" />
+			<label for = "Q31_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q33</h5>
+		<p>
+			<label><i>It is important to respect authority.</i></label></br>
+			<input type = "radio"
+				name = "32"
+				id = "Q32_0"
+				value = "0" />
+			<label for = "Q32_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "32"
+				id = "Q32_1"
+				value = "1" />
+			<label for = "Q32_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "32"
+				id = "Q32_2"
+				value = "2" />
+			<label for = "Q32_2">Agree.</label></br>
+			<input type = "radio"
+				name = "32"
+				id = "Q32_3"
+				value = "3" />
+			<label for = "Q32_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q34</h5>
+		<p>
+			<label><i>I am always doing new things.</i></label></br>
+			<input type = "radio"
+				name = "33"
+				id = "Q33_0"
+				value = "0" />
+			<label for = "Q33_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "33"
+				id = "Q33_1"
+				value = "1" />
+			<label for = "Q33_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "33"
+				id = "Q33_2"
+				value = "2" />
+			<label for = "Q33_2">Agree.</label></br>
+			<input type = "radio"
+				name = "33"
+				id = "Q33_3"
+				value = "3" />
+			<label for = "Q33_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q35</h5>
+		<p>
+			<label><i>I tend to be cautious, but not fearful.</i></label></br>
+			<input type = "radio"
+				name = "34"
+				id = "Q34_0"
+				value = "0" />
+			<label for = "Q34_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "34"
+				id = "Q34_1"
+				value = "1" />
+			<label for = "Q34_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "34"
+				id = "Q34_2"
+				value = "2" />
+			<label for = "Q34_2">Agree.</label></br>
+			<input type = "radio"
+				name = "34"
+				id = "Q34_3"
+				value = "3" />
+			<label for = "Q34_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q36</h5>
+		<p>
+			<label><i>After watching an emotional film I often still feel moved by it several hours later.</i></label></br>
+			<input type = "radio"
+				name = "35"
+				id = "Q35_0"
+				value = "0" />
+			<label for = "Q35_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "35"
+				id = "Q35_1"
+				value = "1" />
+			<label for = "Q35_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "35"
+				id = "Q35_2"
+				value = "2" />
+			<label for = "Q35_2">Agree.</label></br>
+			<input type = "radio"
+				name = "35"
+				id = "Q35_3"
+				value = "3" />
+			<label for = "Q35_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q37</h5>
+		<p>
+			<label><i>I am willing to take risks to do what I want to do.</i></label></br>
+			<input type = "radio"
+				name = "36"
+				id = "Q36_0"
+				value = "0" />
+			<label for = "Q36_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "36"
+				id = "Q36_1"
+				value = "1" />
+			<label for = "Q36_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "36"
+				id = "Q36_2"
+				value = "2" />
+			<label for = "Q36_2">Agree.</label></br>
+			<input type = "radio"
+				name = "36"
+				id = "Q36_3"
+				value = "3" />
+			<label for = "Q36_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q38</h5>
+		<p>
+			<label><i>I vividly imagine both wonderful and horrible things happening to me.</i></label></br>
+			<input type = "radio"
+				name = "37"
+				id = "Q37_0"
+				value = "0" />
+			<label for = "Q37_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "37"
+				id = "Q37_1"
+				value = "1" />
+			<label for = "Q37_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "37"
+				id = "Q37_2"
+				value = "2" />
+			<label for = "Q37_2">Agree.</label></br>
+			<input type = "radio"
+				name = "37"
+				id = "Q37_3"
+				value = "3" />
+			<label for = "Q37_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q39</h5>
+		<p>
+			<label><i>I get restless if I have to stay home for any length of time.</i></label></br>
+			<input type = "radio"
+				name = "38"
+				id = "Q38_0"
+				value = "0" />
+			<label for = "Q38_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "38"
+				id = "Q38_1"
+				value = "1" />
+			<label for = "Q38_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "38"
+				id = "Q38_2"
+				value = "2" />
+			<label for = "Q38_2">Agree.</label></br>
+			<input type = "radio"
+				name = "38"
+				id = "Q38_3"
+				value = "3" />
+			<label for = "Q38_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q40</h5>
+		<p>
+			<label><i>I am more analytical and logical than most people.</i></label></br>
+			<input type = "radio"
+				name = "39"
+				id = "Q39_0"
+				value = "0" />
+			<label for = "Q39_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "39"
+				id = "Q39_1"
+				value = "1" />
+			<label for = "Q39_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "39"
+				id = "Q39_2"
+				value = "2" />
+			<label for = "Q39_2">Agree.</label></br>
+			<input type = "radio"
+				name = "39"
+				id = "Q39_3"
+				value = "3" />
+			<label for = "Q39_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q41</h5>
+		<p>
+			<label><i>My friends would say I am very curious.</i></label></br>
+			<input type = "radio"
+				name = "40"
+				id = "Q40_0"
+				value = "0" />
+			<label for = "Q40_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "40"
+				id = "Q40_1"
+				value = "1" />
+			<label for = "Q40_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "40"
+				id = "Q40_2"
+				value = "2" />
+			<label for = "Q40_2">Agree.</label></br>
+			<input type = "radio"
+				name = "40"
+				id = "Q40_3"
+				value = "3" />
+			<label for = "Q40_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q42</h5>
+		<p>
+			<label><i>I pursue intellectual topics thoroughly and regularly.</i></label></br>
+			<input type = "radio"
+				name = "41"
+				id = "Q41_0"
+				value = "0" />
+			<label for = "Q41_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "41"
+				id = "Q41_1"
+				value = "1" />
+			<label for = "Q41_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "41"
+				id = "Q41_2"
+				value = "2" />
+			<label for = "Q41_2">Agree.</label></br>
+			<input type = "radio"
+				name = "41"
+				id = "Q41_3"
+				value = "3" />
+			<label for = "Q41_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q43</h5>
+		<p>
+			<label><i>My friends and family would say I have traditional values.</i></label></br>
+			<input type = "radio"
+				name = "42"
+				id = "Q42_0"
+				value = "0" />
+			<label for = "Q42_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "42"
+				id = "Q42_1"
+				value = "1" />
+			<label for = "Q42_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "42"
+				id = "Q42_2"
+				value = "2" />
+			<label for = "Q42_2">Agree.</label></br>
+			<input type = "radio"
+				name = "42"
+				id = "Q42_3"
+				value = "3" />
+			<label for = "Q42_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q44</h5>
+		<p>
+			<label><i>I like to figure out how things work.</i></label></br>
+			<input type = "radio"
+				name = "43"
+				id = "Q43_0"
+				value = "0" />
+			<label for = "Q43_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "43"
+				id = "Q43_1"
+				value = "1" />
+			<label for = "Q43_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "43"
+				id = "Q43_2"
+				value = "2" />
+			<label for = "Q43_2">Agree.</label></br>
+			<input type = "radio"
+				name = "43"
+				id = "Q43_3"
+				value = "3" />
+			<label for = "Q43_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q45</h5>
+		<p>
+			<label><i>I am very sensitive to people’s feelings and needs.</i></label></br>
+			<input type = "radio"
+				name = "44"
+				id = "Q44_0"
+				value = "0" />
+			<label for = "Q44_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "44"
+				id = "Q44_1"
+				value = "1" />
+			<label for = "Q44_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "44"
+				id = "Q44_2"
+				value = "2" />
+			<label for = "Q44_2">Agree.</label></br>
+			<input type = "radio"
+				name = "44"
+				id = "Q44_3"
+				value = "3" />
+			<label for = "Q44_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q46</h5>
+		<p>
+			<label><i>I am tough-minded.</i></label></br>
+			<input type = "radio"
+				name = "45"
+				id = "Q45_0"
+				value = "0" />
+			<label for = "Q45_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "45"
+				id = "Q45_1"
+				value = "1" />
+			<label for = "Q45_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "45"
+				id = "Q45_2"
+				value = "2" />
+			<label for = "Q45_2">Agree.</label></br>
+			<input type = "radio"
+				name = "45"
+				id = "Q45_3"
+				value = "3" />
+			<label for = "Q45_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q47</h5>
+		<p>
+			<label><i>Regardless of what is logical, I generally listen to my heart when making important decisions.</i></label></br>
+			<input type = "radio"
+				name = "46"
+				id = "Q46_0"
+				value = "0" />
+			<label for = "Q46_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "46"
+				id = "Q46_1"
+				value = "1" />
+			<label for = "Q46_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "46"
+				id = "Q46_2"
+				value = "2" />
+			<label for = "Q46_2">Agree.</label></br>
+			<input type = "radio"
+				name = "46"
+				id = "Q46_3"
+				value = "3" />
+			<label for = "Q46_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q48</h5>
+		<p>
+			<label><i>I am more enthusiastic than most people.</i></label></br>
+			<input type = "radio"
+				name = "47"
+				id = "Q47_0"
+				value = "0" />
+			<label for = "Q47_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "47"
+				id = "Q47_1"
+				value = "1" />
+			<label for = "Q47_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "47"
+				id = "Q47_2"
+				value = "2" />
+			<label for = "Q47_2">Agree.</label></br>
+			<input type = "radio"
+				name = "47"
+				id = "Q47_3"
+				value = "3" />
+			<label for = "Q47_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q49</h5>
+		<p>
+			<label><i>I can change my mind easily.</i></label></br>
+			<input type = "radio"
+				name = "48"
+				id = "Q48_0"
+				value = "0" />
+			<label for = "Q48_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "48"
+				id = "Q48_1"
+				value = "1" />
+			<label for = "Q48_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "48"
+				id = "Q48_2"
+				value = "2" />
+			<label for = "Q48_2">Agree.</label></br>
+			<input type = "radio"
+				name = "48"
+				id = "Q48_3"
+				value = "3" />
+			<label for = "Q48_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q50</h5>
+		<p>
+			<label><i>When I buy a new machine (e.g., camera, computer or car), I want to know all of its technical features.</i></label></br>
+			<input type = "radio"
+				name = "49"
+				id = "Q49_0"
+				value = "0" />
+			<label for = "Q49_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "49"
+				id = "Q49_1"
+				value = "1" />
+			<label for = "Q49_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "49"
+				id = "Q49_2"
+				value = "2" />
+			<label for = "Q49_2">Agree.</label></br>
+			<input type = "radio"
+				name = "49"
+				id = "Q49_3"
+				value = "3" />
+			<label for = "Q49_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q51</h5>
+		<p>
+			<label><i>I often find myself getting lost in my thoughts during the day.</i></label></br>
+			<input type = "radio"
+				name = "50"
+				id = "Q50_0"
+				value = "0" />
+			<label for = "Q50_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "50"
+				id = "Q50_1"
+				value = "1" />
+			<label for = "Q50_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "50"
+				id = "Q50_2"
+				value = "2" />
+			<label for = "Q50_2">Agree.</label></br>
+			<input type = "radio"
+				name = "50"
+				id = "Q50_3"
+				value = "3" />
+			<label for = "Q50_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q52</h5>
+		<p>
+			<label><i>I like to avoid the nuances and say exactly what I mean.</i></label></br>
+			<input type = "radio"
+				name = "51"
+				id = "Q51_0"
+				value = "0" />
+			<label for = "Q51_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "51"
+				id = "Q51_1"
+				value = "1" />
+			<label for = "Q51_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "51"
+				id = "Q51_2"
+				value = "2" />
+			<label for = "Q51_2">Agree.</label></br>
+			<input type = "radio"
+				name = "51"
+				id = "Q51_3"
+				value = "3" />
+			<label for = "Q51_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q53</h5>
+		<p>
+			<label><i>When I wake up from a vivid dream, it takes me a few seconds to return to reality.</i></label></br>
+			<input type = "radio"
+				name = "52"
+				id = "Q52_0"
+				value = "0" />
+			<label for = "Q52_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "52"
+				id = "Q52_1"
+				value = "1" />
+			<label for = "Q52_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "52"
+				id = "Q52_2"
+				value = "2" />
+			<label for = "Q52_2">Agree.</label></br>
+			<input type = "radio"
+				name = "52"
+				id = "Q52_3"
+				value = "3" />
+			<label for = "Q52_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q54</h5>
+		<p>
+			<label><i>I tend to be meticulous in my duties.</i></label></br>
+			<input type = "radio"
+				name = "53"
+				id = "Q53_0"
+				value = "0" />
+			<label for = "Q53_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "53"
+				id = "Q53_1"
+				value = "1" />
+			<label for = "Q53_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "53"
+				id = "Q53_2"
+				value = "2" />
+			<label for = "Q53_2">Agree.</label></br>
+			<input type = "radio"
+				name = "53"
+				id = "Q53_3"
+				value = "3" />
+			<label for = "Q53_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q55</h5>
+		<p>
+			<label><i>When reading, I enjoy when the writer takes a sidetrack to say something beautiful or meaningful.</i></label></br>
+			<input type = "radio"
+				name = "54"
+				id = "Q54_0"
+				value = "0" />
+			<label for = "Q54_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "54"
+				id = "Q54_1"
+				value = "1" />
+			<label for = "Q54_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "54"
+				id = "Q54_2"
+				value = "2" />
+			<label for = "Q54_2">Agree.</label></br>
+			<input type = "radio"
+				name = "54"
+				id = "Q54_3"
+				value = "3" />
+			<label for = "Q54_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q56</h5>
+		<p>
+			<label><i>Taking care of my possessions is a high priority for me.</i></label></br>
+			<input type = "radio"
+				name = "55"
+				id = "Q55_0"
+				value = "0" />
+			<label for = "Q55_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "55"
+				id = "Q55_1"
+				value = "1" />
+			<label for = "Q55_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "55"
+				id = "Q55_2"
+				value = "2" />
+			<label for = "Q55_2">Agree.</label></br>
+			<input type = "radio"
+				name = "55"
+				id = "Q55_3"
+				value = "3" />
+			<label for = "Q55_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q57</h5>
+		<p>
+			<label><i>I tend to be daring in my work and thinking.</i></label></br>
+			<input type = "radio"
+				name = "56"
+				id = "Q56_0"
+				value = "0" />
+			<label for = "Q56_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "56"
+				id = "Q56_1"
+				value = "1" />
+			<label for = "Q56_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "56"
+				id = "Q56_2"
+				value = "2" />
+			<label for = "Q56_2">Agree.</label></br>
+			<input type = "radio"
+				name = "56"
+				id = "Q56_3"
+				value = "3" />
+			<label for = "Q56_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q58</h5>
+		<p>
+			<label><i>I’m interested in all kinds of different people.</i></label></br>
+			<input type = "radio"
+				name = "57"
+				id = "Q57_0"
+				value = "0" />
+			<label for = "Q57_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "57"
+				id = "Q57_1"
+				value = "1" />
+			<label for = "Q57_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "57"
+				id = "Q57_2"
+				value = "2" />
+			<label for = "Q57_2">Agree.</label></br>
+			<input type = "radio"
+				name = "57"
+				id = "Q57_3"
+				value = "3" />
+			<label for = "Q57_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q59</h5>
+		<p>
+			<label><i>I generally prefer to do familiar things.</i></label></br>
+			<input type = "radio"
+				name = "58"
+				id = "Q58_0"
+				value = "0" />
+			<label for = "Q58_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "58"
+				id = "Q58_1"
+				value = "1" />
+			<label for = "Q58_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "58"
+				id = "Q58_2"
+				value = "2" />
+			<label for = "Q58_2">Agree.</label></br>
+			<input type = "radio"
+				name = "58"
+				id = "Q58_3"
+				value = "3" />
+			<label for = "Q58_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+	<fieldset>
+		<h5>Q60</h5>
+		<p>
+			<label><i>I tend to be imaginative and listen to my intuition.</i></label></br>
+			<input type = "radio"
+				name = "59"
+				id = "Q59_0"
+				value = "0" />
+			<label for = "Q59_0">Strongly Disagree.</label></br>
+			<input type = "radio"
+				name = "59"
+				id = "Q59_1"
+				value = "1" />
+			<label for = "Q59_1">Disagree.</label></br>
+			<input type = "radio"
+				name = "59"
+				id = "Q59_2"
+				value = "2" />
+			<label for = "Q59_2">Agree.</label></br>
+			<input type = "radio"
+				name = "59"
+				id = "Q59_3"
+				value = "3" />
+			<label for = "Q59_3">Strongly Agree.</label></br>
+		</p>
+	</fieldset>
+
+	<fieldset>
+		<input type="submit" value="Submit" class="btn btn-primary" style="margin-left: 40%;"/>
+	</fieldset>
+	<fieldset hidden>
+		<input type="hidden" name="keys_string" id="keys" value="12349ABC123456789ABC1234DEFG1234DEFG567812345678DEFG56789ABC1234DEFG123456789ABCDEFG56789ABC5678567812349ABC56789ABCDEFG9ABC1234567812345678DEFG1234DEFG12349ABC12349ABC56789ABCDEFG9ABCDEFG1234DEFG9ABCDEFG9ABCDEFG5678DEFG56789ABC12345678DEFG">
 	</fieldset>
 </form>
 </div>

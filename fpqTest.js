@@ -21,21 +21,21 @@ function calculate_fpq(body){
             var score_value = 0;
             switch (range) {
                 case 'Explorer':
-                    score_value = char_value - 48;
+                    score_value = char_value - 49;
                     break;
                 case 'Builder':
-                    score_value = char_value - 52;
+                    score_value = char_value - 53;
                     break;
                 case 'Director':
                     if (char_value === 57){
-                        score_value = char_value - 56;
+                        score_value = char_value - 57;
                     }
                     else{
-                        score_value = char_value - 63;
+                        score_value = char_value - 64;
                     }
                     break;
                 case 'Negotiator':
-                    score_value = char_value - 67;
+                    score_value = char_value - 68;
                     break;
             }
             return score_value;
@@ -77,16 +77,40 @@ function calculate_fpq(body){
             }
         }
 
-        //Find maximum value of dictionary
+        //Find maximum value of dictionary and second maximum value
         var max = 0;
-        var prop_max = '';
+        var prop_max = '';        
+        var max_second = 0;
+        var prop_second = '';
         for(var prop in temperaments) {
             if(temperaments[prop] > max){
                 max = temperaments[prop];
                 prop_max = prop;
             } 
         }
-
+        for(var prop in temperaments) {
+            if((temperaments[prop] > max_second) && (prop != prop_max)){
+                max_second = temperaments[prop];
+                prop_second = prop;
+            } 
+        }
+        //Break ties by deferring to most common 1.Negotiator 2.Builder 3.Explorer 4.Director
+        //Assume (highly uncommon to get 3 or 4 way match)
+        if (max === max_second){
+            if (prop_second === 'Negotiator'){
+                prop_max = 'Negotiator';
+            }
+            else if (prop_max === 'Explorer' && prop_second === 'Builder'){
+                prop_max = 'Builder';
+            }
+            else if (prop_max === 'Director' && prop_second === 'Builder'){
+                prop_max = 'Builder';
+            }
+            else if (prop_max === 'Director' && prop_second === 'Explorer'){
+                prop_max = 'Explorer';
+            }
+        }
+        
         //Assign result based on additive scoring
         var score_details = '';
         var result_arr = [];
@@ -94,7 +118,10 @@ function calculate_fpq(body){
         result_arr[1] = {};
         result_arr[0].result = prop_max;
         score_details = JSON.stringify(temperaments).replace(/[\{\}"]+/g,''); 
-        result_arr[1] = score_details.replace(/[Explorer]+/g,'E').replace(/[Builder]+/g,'B').replace(/[Director]+/g,'D').replace(/[Negotiator]+/g,'N');
+        score_details = score_details.replace(/Explorer\b/g,'E');
+        score_details = score_details.replace(/Builder\b/g,'B')
+        score_details = score_details.replace(/Director\b/g,'D')
+        result_arr[1] = score_details.replace(/Negotiator\b/g,'N');
         resolve(result_arr);
     });
 }
