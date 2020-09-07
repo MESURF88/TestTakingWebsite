@@ -24,7 +24,7 @@ function calculate_eq(body){
         //Assign additive scores to the total eq score
         for (var i = 0; i < key_length; i++){
             if (parseInt(body[ans_idx]) === (i - (question_num * NUM_OPTIONS))){
-                eq_score += ParseInt(key[i]);
+                eq_score += parseInt(key[i]);
             }
             if ((i + 1) % NUM_OPTIONS == 0){
                 question_num++;

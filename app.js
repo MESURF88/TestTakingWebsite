@@ -210,7 +210,9 @@ router.get('/', (req, res) => {
 app.use('/', router);
 app.use('/ipipTest', require('./ipipTest.js'));
 app.use('/jtTest', require('./jtTest.js'));
-
+app.use('/discTest', require('./discTest.js'));
+app.use('/fpqTest', require('./fpqTest.js'));
+app.use('/eqTest', require('./eqTest.js'));
 app.use('/eopsTest', require('./eopsTest.js'));
 app.use('/chronoTest', require('./chronoTest.js'));
 app.use('/spiritTest', require('./spiritTest.js'));
