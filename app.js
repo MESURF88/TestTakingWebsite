@@ -201,7 +201,10 @@ router.get('/results', (req, res) => {
 
 //Home page
 router.get('/', (req, res) => {
-  res.render('home.handlebars');
+  var context = {};
+  var url_static = './public/img/' + 'Home' +  '.jpg';     
+  context.imgHomeURL = base64img.base64Sync(url_static);
+  res.render('home.handlebars', context);
 });
 
 
