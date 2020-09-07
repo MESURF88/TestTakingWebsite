@@ -211,6 +211,7 @@ app.use('/', router);
 app.use('/ipipTest', require('./ipipTest.js'));
 app.use('/jtTest', require('./jtTest.js'));
 
+app.use('/eopsTest', require('./eopsTest.js'));
 app.use('/chronoTest', require('./chronoTest.js'));
 app.use('/spiritTest', require('./spiritTest.js'));
 app.use('/custom', require('./custom.js'));

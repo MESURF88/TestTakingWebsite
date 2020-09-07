@@ -28,6 +28,11 @@ function calculate_eops(body){
     return new Promise(function(resolve,reject) {
         var questions_answered = Object.keys(body).length - 1;
 
+        var score_matrix = [
+            6 , 1 , 5 , 7 , 4 , 8 , 3 , 5 , 9 , 8 , 8 , 6 , 9 , 8 , 7 , 2 , 6 , 9 ,
+            5 , 3 , 2 , 6 , 4 , 7 , 9 , 7 , 3 , 1 , 4 , 2 , 3 , 1 , 2 , 4 , 1 , 5
+        ];
+
         const NUM_OPTIONS = 5;
         var key = body.keys_string;
         var key_length = key.length;
@@ -46,7 +51,35 @@ function calculate_eops(body){
         //Assign additive scores for the 9 EoPS bins
         for (var i = 0; i < key_length; i++){
             if (parseInt(body[ans_idx]) === (i - (question_num * NUM_OPTIONS))){
-                eops_bins['Reformer'] += ParseInt(key[i]);
+                switch (score_matrix[question_num]){
+                    case 1:
+                        eops_bins['Reformer'] += parseInt(key[i]);
+                        break;
+                    case 2:
+                        eops_bins['Helper'] += parseInt(key[i]);
+                        break;
+                    case 3:
+                        eops_bins['Achiever'] += parseInt(key[i]);
+                        break;
+                    case 4:
+                        eops_bins['Individualist'] += parseInt(key[i]);
+                        break;
+                    case 5:
+                        eops_bins['Investigator'] += parseInt(key[i]);
+                        break;
+                    case 6:
+                        eops_bins['Loyalist'] += parseInt(key[i]);
+                        break;
+                    case 7:
+                        eops_bins['Enthusiast'] += parseInt(key[i]);
+                        break;
+                    case 8:
+                        eops_bins['Challenger'] += parseInt(key[i]);
+                        break;
+                    case 9:
+                        eops_bins['Peacemaker'] += parseInt(key[i]);
+                        break;
+                }
             }
             if ((i + 1) % NUM_OPTIONS == 0){
                 question_num++;
@@ -54,10 +87,19 @@ function calculate_eops(body){
             }
         }
 
-        //Determine EoPS based on additive scoring
-        var result_eops = 'Reformer';
+        //Find maximum value of dictionary
+        var max = 0;
+        var prop_max = '';
+        for(var prop in eops_bins) {
+            if(eops_bins[prop] > max){
+                max = eops_bins[prop];
+                prop_max = prop;
+            } 
+        }
 
- 
+        //Determine EoPS based on additive scoring
+        var result_eops = prop_max;
+
         resolve(result_eops);
     });
 }

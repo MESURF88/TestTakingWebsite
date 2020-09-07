@@ -81,8 +81,8 @@ function calculate_fpq(body){
         var max = 0;
         var prop_max = '';
         for(var prop in temperaments) {
-            if(quadrants[prop] > max){
-                max = quadrants[prop];
+            if(temperaments[prop] > max){
+                max = temperaments[prop];
                 prop_max = prop;
             } 
         }
