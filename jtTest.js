@@ -21,11 +21,6 @@ module.exports = function(){
 function calculate_jt(body){
     return new Promise(function(resolve,reject) {
 
-        //determine index for 2 point additive keys
-        function determine_scale(char_value){
-            var idx = char_value - 65;
-            return idx;
-        };
         const NUM_OPTIONS = 4;
         var key = body.keys_string;
         var key_length = key.length; 
@@ -36,12 +31,16 @@ function calculate_jt(body){
         question_num = 0;
         for (var i = 0; i < key_length; i++){
             if (parseInt(body[ans_idx]) === (i - (question_num * NUM_OPTIONS))){
+                var key_value = key[i].charCodeAt();
+                var idx = 0;
                 //if key is integer 1 point allocation.
-                if (Number.isInteger(key[i])){
-                    pref_arr[key[i]]++;
+                if (key_value < 56){
+                    idx = key_value - 48;
+                    pref_arr[idx]++;
                 }
+                //determine index for 2 point additive keys
                 else{
-                   var idx = determine_scale(key[i].charCodeAt());
+                   idx = key_value - 65;
                    pref_arr[idx] += 2;
                 }
             }
