@@ -21,7 +21,8 @@ module.exports = function(){
 function calculate_jt(body){
     return new Promise(function(resolve,reject) {
 
-        const NUM_OPTIONS = 4;
+        var NUM_OPTIONS = 4;
+        var QUESTION_OFFEST = 0;
         var key = body.keys_string;
         var key_length = key.length; 
         var arr_length = 8;
@@ -30,7 +31,13 @@ function calculate_jt(body){
         ans_idx = 0;
         question_num = 0;
         for (var i = 0; i < key_length; i++){
-            if (parseInt(body[ans_idx]) === (i - (question_num * NUM_OPTIONS))){
+            //after 10 questions revert to 2 question scoring.
+            if (i === 40){
+                NUM_OPTIONS = 2;
+                QUESTION_OFFEST = 20;
+            }
+            if (parseInt(body[ans_idx]) === (i - (question_num * NUM_OPTIONS) - QUESTION_OFFEST)){
+                
                 var key_value = key[i].charCodeAt();
                 var idx = 0;
                 //if key is integer 1 point allocation.
