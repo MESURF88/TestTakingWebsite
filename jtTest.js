@@ -92,7 +92,7 @@ function calculate_jt(body){
             result_jt += 'N';
             score += 'N:';
             if (!Number.isNaN(N_val)){
-                score += parseInt((INval*100)).toString();
+                score += parseInt((N_val*100)).toString();
             }
             score += ','
         }
