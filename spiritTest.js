@@ -114,7 +114,7 @@ function calculate_spirit_animal(body){
         }
 
         //Determine spirit based on additive scoring
-        var result_spirit = prop_max;
+        var result_spirit = prop_max.toString();
         
         resolve(result_spirit);
     });

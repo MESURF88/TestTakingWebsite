@@ -11,6 +11,7 @@ const base64img = require('base64-img');
 const { totalmem } = require('os');
 const { resolve } = require('path');
 
+var calc_method =  require('./calculate.js');
 var handlebars = require('express-handlebars').create({defaultLayout:'main',
   // Specify helpers which are only registered on this instance.
   helpers: {
@@ -129,29 +130,28 @@ router.get('/results', (req, res) => {
           else{
             all_results[idx] = context[result_string].result;
           }
-          if (idx < (NUM_TESTS - 1)){
+          if (idx < (NUM_TESTS)){
             idx++;
           }
         }
         if (all_defined == 1 && req.query.reprocess != 'custom'){
           context.animate = '1';
           context.dndCharDisplay = '1';
-          //Generate random processing id for current user's dnd character recalculation
-          var rand = Math.floor(Math.random() * 100);
-          rand *= (Math.floor(Math.random() * 5) + 1);
-          const proto = req.protocol + '://' + req.get('host'); 
-          var options = { method: 'POST',
-            url: `${proto}/custom/results/${rand}`,
-            headers: { 'content-type': 'application/json' },
-            body: all_results,
-            json: true };
-          request(options, (error, response, body) => {
-              if (error){
-                  res.status(500).send(error);
-              } else {
-                res.render('results.handlebars', context);
-              }
+          //all defined calculation
+          calc_method.calculate_character(all_results).then(function(key) {
+            req.session.display_check = '1';
+            req.session.dnd_char = key['dnd_char'];
+            if(req.session.dnd_char != undefined){
+              context.dndChar = req.session.dnd_char.toString();
+              var url_static = './public/img/' + req.session.dnd_char.toString() +  '.jpg';     
+              context.imgURL = base64img.base64Sync(url_static); 
+            }
+            res.render('results.handlebars', context);
+          }, function(error) {
+              console.error("Failed!", error);
+              res.status(404).end();
           });
+          
         }
         else{
           context.animate = '0';
