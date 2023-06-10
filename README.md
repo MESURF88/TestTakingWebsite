@@ -17,3 +17,13 @@ Take all the tests and see the secret Result screen.
 ## Running locally
 
     node app.js
+
+
+### notes on heroku deployment
+open terminal to see logs
+$ heroku logs --tail
+H14 error in heroku - "no web processes running"
+$ heroku ps:scale web=1
+the above activates web dynos, and incurs a cost...
+to put it back
+$ heroku ps:scale web=0
